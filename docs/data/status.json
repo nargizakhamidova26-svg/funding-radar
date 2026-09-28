@@ -1,1 +1,271 @@
-{"updated": null, "sites": []}
+{
+ "updated": "2026-09-28T06:36+00:00",
+ "sites": [
+  {
+   "site": "fundsforNGOs",
+   "url": "https://www2.fundsforngos.org/feed/",
+   "ok": true,
+   "listings": 25,
+   "new": 2,
+   "error": "",
+   "sample": [
+    "Wild Animal Initiative Fellowships for Early-Career Scientists",
+    "Infrastructure Development Fund Stream 2: Unlocking Infill Precincts (Australia)",
+    "Wild Animal Initiative Fellowships for Early-Career Scientists"
+   ]
+  },
+  {
+   "site": "Proposals for NGOs",
+   "url": "https://www.proposalsforngos.com/",
+   "ok": true,
+   "listings": 26,
+   "new": 4,
+   "error": "",
+   "sample": [
+    "Top 5 Tips for Proposal on Refugee Issue",
+    "Urika Basnet",
+    "International Day of Charity- 5 Quick Fundraising Tips"
+   ]
+  },
+  {
+   "site": "Candid PND RFPs",
+   "url": "https://philanthropynewsdigest.org/rfps",
+   "ok": true,
+   "listings": 0,
+   "new": 0,
+   "error": "no links found: page may need js: true, a link_pattern or item_selector",
+   "sample": []
+  },
+  {
+   "site": "Terra Viva Grants",
+   "url": "https://www.terravivagrants.org/",
+   "ok": true,
+   "listings": 7,
+   "new": 3,
+   "error": "",
+   "sample": [
+    "How it Works",
+    "Funding News",
+    "Grant Maker Profiles"
+   ]
+  },
+  {
+   "site": "Innovation for Change",
+   "url": "https://innovationforchange.net/opportunities/",
+   "ok": false,
+   "listings": 0,
+   "new": 0,
+   "error": "could not download (404 Client Error: Not Found for url: https://innovationforchange.net/opportunities/)"
+  },
+  {
+   "site": "Opportunity Desk",
+   "url": "https://opportunitydesk.org/feed/",
+   "ok": true,
+   "listings": 10,
+   "new": 2,
+   "error": "",
+   "sample": [
+    "IHS AI Workforce Faculty Research Grant Program 2027 (up to $20,000)",
+    "Mentora Scholars Fellowship 2027 (Fully-funded)",
+    "Commonwealth Foundation Grant 2026-2027 (up to £15,000)"
+   ]
+  },
+  {
+   "site": "AsianNGO",
+   "url": "https://www.asianngo.org/",
+   "ok": true,
+   "listings": 1,
+   "new": 0,
+   "error": "",
+   "sample": [
+    "Presence of partners across the globe"
+   ]
+  },
+  {
+   "site": "ReliefWeb",
+   "url": "https://reliefweb.int/funding",
+   "ok": true,
+   "listings": 0,
+   "new": 0,
+   "error": "no links found: page may need js: true, a link_pattern or item_selector",
+   "sample": []
+  },
+  {
+   "site": "GrantPortal",
+   "url": "https://www.grantportal.com/",
+   "ok": false,
+   "listings": 0,
+   "new": 0,
+   "error": "could not download (HTTPSConnectionPool(host='www.grantportal.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='www.grantportal.com', port=443): Fa"
+  },
+  {
+   "site": "UN Democracy Fund",
+   "url": "https://www.un.org/democracyfund/",
+   "ok": true,
+   "listings": 16,
+   "new": 0,
+   "error": "",
+   "sample": [
+    "Democracy Fund",
+    "UNDEF CSO Round Table during the 70th session of the CSW",
+    "Engaging Armenian Youth in Local Governance"
+   ]
+  },
+  {
+   "site": "World Bank Procurement (Uzbekistan)",
+   "url": "https://projects.worldbank.org/en/projects-operations/procurement",
+   "ok": false,
+   "listings": 0,
+   "new": 0,
+   "error": "503 Server Error: Service Unavailable for url: https://search.worldbank.org/api/v2/procnotices?format=json&qterm=Uzbekistan&rows=100&os=0&srt=noticedate&order=desc&apilang=en"
+  },
+  {
+   "site": "ADB Tenders",
+   "url": "https://www.adb.org/projects/tenders",
+   "ok": false,
+   "listings": 0,
+   "new": 0,
+   "error": "could not download (403 Client Error: Forbidden for url: https://www.adb.org/projects/tenders)"
+  },
+  {
+   "site": "Adaptation Fund",
+   "url": "https://www.adaptation-fund.org/apply-funding/",
+   "ok": true,
+   "listings": 34,
+   "new": 16,
+   "error": "",
+   "sample": [
+    "Locally Led Adaptation",
+    "LLA Single Country Grants",
+    "LLA Regional Projects/Programmes"
+   ]
+  },
+  {
+   "site": "CEPF Open Calls",
+   "url": "https://www.cepf.net/grants/open-calls-for-proposals",
+   "ok": true,
+   "listings": 15,
+   "new": 3,
+   "error": "",
+   "sample": [
+    "Before You Apply",
+    "How to Apply",
+    "Life Cycle of a Grant"
+   ]
+  },
+  {
+   "site": "IKI (International Climate Initiative)",
+   "url": "https://www.international-climate-initiative.com/en/find-funding/",
+   "ok": true,
+   "listings": 10,
+   "new": 9,
+   "error": "",
+   "sample": [
+    "IKI Strategy 2030",
+    "Contact form",
+    "Click here for more information on the funding programme"
+   ]
+  },
+  {
+   "site": "EU Funding & Tenders",
+   "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/",
+   "ok": true,
+   "listings": 32,
+   "new": 27,
+   "error": "",
+   "sample": [
+    "New approaches for decentralized, federated and sustainable AI data processing (RIA) (HORIZON-CL4-2027-04-DATA-03)",
+    "Energy efficiency and sustainability of AI data processing in Data Centres (IA) (HORIZON-CL4-2027-04-DATA-09)",
+    "Demand-side 3C pilot demonstrators on converged Telco Edge Cloud Infrastructure (IA) (HORIZON-CL4-2027-04-DATA-08)"
+   ]
+  },
+  {
+   "site": "ICMPD Calls for Proposals",
+   "url": "https://www.icmpd.org/work-with-us/grants/calls-for-proposals",
+   "ok": true,
+   "listings": 13,
+   "new": 9,
+   "error": "",
+   "sample": [
+    "Clarification Note N°1",
+    "Information Session Presentation (YERP_1.Call for Proposals)",
+    "YERP: How to Register and Apply Guideline"
+   ]
+  },
+  {
+   "site": "Grants.gov (incl. US Embassy calls)",
+   "url": "https://www.grants.gov/",
+   "ok": true,
+   "listings": 101,
+   "new": 85,
+   "error": "",
+   "sample": [
+    "Coordinating Agricultural Development &amp; Innovation (CADI) to enable America First Trade Wins in Europe, the South Ca",
+    "Middle East Regional Cooperation (MERC)",
+    "Paris Peace Agreements Report NOFO"
+   ]
+  },
+  {
+   "site": "Global Affairs Canada Calls",
+   "url": "https://www.international.gc.ca/world-monde/funding-financement/calls-appels/index.aspx?lang=eng",
+   "ok": false,
+   "listings": 0,
+   "new": 0,
+   "error": "could not download (404 Client Error: Not Found for url: https://www.international.gc.ca/world-monde/funding-financement/calls-appels/index.aspx?lang=eng)"
+  },
+  {
+   "site": "Norad Calls (Norway)",
+   "url": "https://www.norad.no/en/tools-publications/call-for-proposals/",
+   "ok": false,
+   "listings": 0,
+   "new": 0,
+   "error": "could not download (404 Client Error: Not Found for url: https://www.norad.no/en/tools-publications/call-for-proposals/)"
+  },
+  {
+   "site": "Sida Funding (Sweden)",
+   "url": "https://www.sida.se/en/for-partners/funding",
+   "ok": false,
+   "listings": 0,
+   "new": 0,
+   "error": "could not download (404 Client Error: Not Found for url: https://www.sida.se/en/for-partners/funding)"
+  },
+  {
+   "site": "Danida Open Calls (Denmark)",
+   "url": "https://um.dk/en/danida-en/partners/open-calls/",
+   "ok": false,
+   "listings": 0,
+   "new": 0,
+   "error": "could not download (404 Client Error: Not Found for url: https://um.dk/en/danida-en/partners/open-calls/)"
+  },
+  {
+   "site": "SDC Calls for Proposals (Switzerland)",
+   "url": "https://www.eda.admin.ch/sdc/en/home/partnerships_tenders/calls-for-proposals.html",
+   "ok": false,
+   "listings": 0,
+   "new": 0,
+   "error": "could not download (403 Client Error: Forbidden for url: https://www.eda.admin.ch/sdc/en/home/partnerships_tenders/calls-for-proposals.html)"
+  },
+  {
+   "site": "Darwin Initiative (UK)",
+   "url": "https://www.darwininitiative.org.uk/",
+   "ok": true,
+   "listings": 4,
+   "new": 0,
+   "error": "",
+   "sample": [
+    "Find Out More >",
+    "Read Article",
+    "Read Article"
+   ]
+  },
+  {
+   "site": "KOICA",
+   "url": "https://www.koica.go.kr/",
+   "ok": true,
+   "listings": 0,
+   "new": 0,
+   "error": "no links found: page may need js: true, a link_pattern or item_selector",
+   "sample": []
+  }
+ ]
+}
