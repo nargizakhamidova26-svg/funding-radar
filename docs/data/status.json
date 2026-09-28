@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-28T07:07+00:00",
+ "updated": "2026-09-28T09:53+00:00",
  "sites": [
   {
    "site": "fundsforNGOs",
@@ -9,9 +9,9 @@
    "new": 3,
    "error": "",
    "sample": [
-    "beVisioneers: The Mercedes-Benz Fellowship Program",
-    "Call for Letters of Inquiry: GEF Small Grants Programme (Saint Vincent and the Grenadines)",
-    "CFPs: Strengthening Independent Journalism and Countering Disinformation in Moldova"
+    "Applications open for Community Grants Scheme 2027 (Ireland)",
+    "Apply for Leeds Sports Club Equipment Grant (United Kingdom)",
+    "RFAs: International Presence Support for Swiss Musicians (Switzerland)"
    ]
   },
   {
@@ -19,7 +19,7 @@
    "url": "https://www.proposalsforngos.com/",
    "ok": true,
    "listings": 26,
-   "new": 2,
+   "new": 0,
    "error": "",
    "sample": [
     "Top 5 Tips for Proposal on Refugee Issue",
@@ -30,17 +30,18 @@
   {
    "site": "Candid PND RFPs",
    "url": "https://philanthropynewsdigest.org/rfps",
-   "ok": false,
+   "ok": true,
    "listings": 0,
    "new": 0,
-   "error": "Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://philanthropynewsdigest.org/rfps\", waiting until \"networkidle\"\n"
+   "error": "no links found: page may need js: true, a link_pattern or item_selector",
+   "sample": []
   },
   {
    "site": "Terra Viva Grants",
    "url": "https://www.terravivagrants.org/funding-news/",
    "ok": true,
    "listings": 40,
-   "new": 1,
+   "new": 0,
    "error": "",
    "sample": [
     "International Fund for Agricultural Development — Rural Sector Performance Assessment for Policy and Investment",
@@ -66,7 +67,7 @@
    "url": "https://opportunitydesk.org/feed/",
    "ok": true,
    "listings": 10,
-   "new": 2,
+   "new": 0,
    "error": "",
    "sample": [
     "IHS AI Workforce Faculty Research Grant Program 2027 (up to $20,000)",
@@ -92,7 +93,7 @@
    "url": "https://projects.worldbank.org/en/projects-operations/procurement",
    "ok": true,
    "listings": 100,
-   "new": 4,
+   "new": 0,
    "error": "",
    "sample": [
     "Request for Expression of Interest: Procurement of ESG Report Verification Services",
@@ -113,7 +114,7 @@
    "url": "https://www.adaptation-fund.org/apply-funding/",
    "ok": true,
    "listings": 34,
-   "new": 7,
+   "new": 0,
    "error": "",
    "sample": [
     "Locally Led Adaptation",
@@ -126,7 +127,7 @@
    "url": "https://www.cepf.net/grants/open-calls-for-proposals",
    "ok": true,
    "listings": 15,
-   "new": 1,
+   "new": 0,
    "error": "",
    "sample": [
     "Before You Apply",
@@ -178,7 +179,7 @@
    "url": "https://www.grants.gov/",
    "ok": true,
    "listings": 1,
-   "new": 1,
+   "new": 0,
    "error": "",
    "sample": [
     "Coordinating Agricultural Development & Innovation (CADI) to enable America First Trade Wins in Europe, the South Caucas"
@@ -189,7 +190,7 @@
    "url": "https://www.norad.no/en/for-partners/guides-and-tools/calls-for-proposals2/",
    "ok": true,
    "listings": 2,
-   "new": 2,
+   "new": 0,
    "error": "",
    "sample": [
     "Call for proposals for the Norwegian development programme to reduce plastic pollution and marine litter – Stage 2 (by i",
@@ -229,7 +230,7 @@
    "url": "https://www.darwininitiative.org.uk/news/",
    "ok": true,
    "listings": 136,
-   "new": 41,
+   "new": 0,
    "error": "",
    "sample": [
     "Read Article",

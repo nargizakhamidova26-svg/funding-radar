@@ -638,5 +638,35 @@
   "geo": "unknown",
   "deadline": null,
   "found": "2026-09-28"
+ },
+ {
+  "id": "87bb7d45b54201ba",
+  "title": "Call for Applications: Animal Welfare Fund Grant Program",
+  "url": "https://www2.fundsforngos.org/individuals/call-for-applications-animal-welfare-fund-grant-program/",
+  "source": "fundsforNGOs",
+  "summary": "Deadline: December 31, 2026 The Animal Welfare Fund (AWF) supports projects that can improve the well-being of large numbers of nonhuman animals. Its priorities include farmed animal welfare, neglected species, research and advocacy in underfunded regions. Applications are currently open through Effective Altruism Funds. What Is the Animal Welfare Fund? AWF is a pooled fund:... [Read More] The pos",
+  "geo": "unknown",
+  "deadline": "2026-12-31",
+  "found": "2026-09-28"
+ },
+ {
+  "id": "b1146cd9e87fedc3",
+  "title": "Request for Applications: SABA Public Awareness Grant Program",
+  "url": "https://www2.fundsforngos.org/science/request-for-applications-saba-public-awareness-grant-program/",
+  "source": "fundsforNGOs",
+  "summary": "The Society for the Advancement of Behavior Analysis (SABA), an ABAI organization, offers the Public Awareness Grant to support projects that deliver evidence-based messaging grounded in behavior science and behavior analytic solutions. The grant application period for 2027 runs from September 2026 until 13 January 2027 (deadline). Up to five grants may be awarded annually, with awards ranging fro",
+  "geo": "unknown",
+  "deadline": "2027-01-13",
+  "found": "2026-09-28"
+ },
+ {
+  "id": "478b6672be4afd3a",
+  "title": "Sidney W. and Janet R. Bijou Grant Program for Doctoral Student Research",
+  "url": "https://www2.fundsforngos.org/science/sidney-w-and-janet-r-bijou-grant-program-for-doctoral-student-research/",
+  "source": "fundsforNGOs",
+  "summary": "The Sidney W. and Janet R. Bijou Grant is an SABA (Society for the Advancement of Behavior Analysis) international development grant for doctoral students conducting research on behavioral development using a behavior-analytic framework. For each academic year, the endowment may provide grants of up to US$12,000, with applications for 2027 open from September 2026 until 13 January 2027. Recipients",
+  "geo": "unknown",
+  "deadline": "2027-01-13",
+  "found": "2026-09-28"
  }
 ]
