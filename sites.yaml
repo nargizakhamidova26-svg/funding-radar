@@ -1,0 +1,362 @@
+# ==========================================================================
+#  UNDP Funding Radar: settings and website list
+#  This is the only file you need to edit. Keep indentation as spaces.
+# ==========================================================================
+
+settings:
+  # Geography filter.
+  #   relaxed: keep calls for Uzbekistan / Central Asia / global, and calls that
+  #            do not say a geography; drop calls limited to OTHER countries.
+  #   strict:  keep only calls that explicitly mention Uzbekistan, the region,
+  #            or global/multi-country eligibility.
+  #   off:     no geography filter.
+  # A site can override this with its own  geography_mode:  line.
+  geography_mode: relaxed
+
+  # A link counts as an opportunity if its title or text contains one of these.
+  # This applies to web pages only. RSS feeds, APIs and sites with a link_pattern
+  # skip this check unless they set require_keywords: true.
+  opportunity_keywords:
+    - call for proposals
+    - call for proposal
+    - call for applications
+    - call for concept notes
+    - call for expressions of interest
+    - expression of interest
+    - request for proposals
+    - request for proposal
+    - request for applications
+    - notice of funding opportunity
+    - open call
+    - grant
+    - funding
+    - funding opportunity
+    - financing facility
+    - challenge fund
+    - innovation challenge
+    - tender
+    - solicitation
+    - RFP
+    - EOI
+    - CfP
+    - NOFO
+    # Korean (KOICA)
+    - 공모
+    - 입찰
+    - 제안요청
+    - 제안서
+    - 사업자 선정
+
+  # Links containing any of these words are always ignored.
+  exclude_keywords:
+    - scholarship
+    - fellowship
+    - internship
+    - vacancy
+    - vacancies
+    - job
+    - consultant
+    - consultancy
+    - webinar
+    - award ceremony
+    - results announced
+    - winners announced
+    - 채용
+
+  # Visit each new opportunity page to read its deadline and eligibility text.
+  fetch_details: true
+  # Maximum number of new detail pages opened per site per run (politeness).
+  max_details_per_site: 25
+
+  # Send a Telegram message on days with no new calls (true/false).
+  notify_when_empty: false
+
+# ==========================================================================
+#  WEBSITES
+#    name:  short label shown in Telegram and on the dashboard
+#    url:   the page that lists calls/opportunities (or an RSS feed address)
+#    type:  rss | html | api
+#  Optional per-site settings:
+#    link_pattern:  text every opportunity link contains (makes results precise)
+#    item_selector: CSS selector for the opportunity links, e.g. "h3 a"
+#    require_keywords: true/false   (override the keyword check)
+#    geography_mode: strict/relaxed/off   (override the global setting)
+#    js: true       site builds its list with JavaScript (uses a headless browser)
+#    enabled: false switch a site off (the reason is written next to it)
+#
+#  After the first run, open the dashboard > "Website status" to see how many
+#  listings each site gave and 3 example titles. That tells you which sites
+#  work well and which need a link_pattern, js: true, or switching off.
+# ==========================================================================
+
+sites:
+
+  # ---------- Grant aggregators (international) ----------
+  - name: fundsforNGOs
+    url: https://www2.fundsforngos.org/feed/
+    type: rss
+    require_keywords: false
+
+  - name: Proposals for NGOs
+    url: https://www.proposalsforngos.com/
+    type: html
+
+  - name: Candid PND RFPs
+    url: https://philanthropynewsdigest.org/rfps
+    type: html
+    link_pattern: /rfps/[^?#]+
+    # Mostly US-focused; the geography filter removes US-only calls it can detect.
+
+  - name: Terra Viva Grants
+    url: https://www.terravivagrants.org/
+    type: html
+
+  - name: Innovation for Change
+    url: https://innovationforchange.net/opportunities/
+    type: html
+
+  - name: Opportunity Desk
+    url: https://opportunitydesk.org/feed/
+    type: rss
+    require_keywords: true   # the feed also has scholarships, events, jobs
+
+  - name: AsianNGO
+    url: https://www.asianngo.org/
+    type: html
+
+  - name: ReliefWeb
+    url: https://reliefweb.int/funding
+    type: html
+
+  - name: GrantPortal
+    url: https://www.grantportal.com/
+    type: html
+
+  # ---------- UN system ----------
+  - name: UNGM
+    enabled: false        # switched off at your request
+    url: https://www.ungm.org/Public/Notice
+    type: html
+    js: true
+    link_pattern: /Public/Notice/\d+
+    geography_mode: strict   # hundreds of notices worldwide; keep only Uzbekistan/region/global
+
+  - name: UNDP Procurement Notices
+    enabled: false        # switched off at your request
+    url: https://procurement-notices.undp.org/
+    type: html
+    link_pattern: view_(notice|negotiation)
+    geography_mode: strict
+
+  - name: UN Women Calls for Proposals
+    enabled: false        # switched off at your request
+    url: https://www.unwomen.org/en/about-us/procurement/calls-for-proposals
+    type: html
+
+  - name: GEF Small Grants Programme
+    enabled: false        # switched off at your request
+    url: https://sgp.undp.org/
+    type: html
+
+  - name: UN Democracy Fund
+    url: https://www.un.org/democracyfund/
+    type: html
+
+  # ---------- Multilateral banks and climate funds ----------
+  - name: World Bank Procurement (Uzbekistan)
+    url: https://projects.worldbank.org/en/projects-operations/procurement
+    type: api
+    api: world_bank
+    query: Uzbekistan
+
+  - name: ADB Tenders
+    url: https://www.adb.org/projects/tenders
+    type: html
+    geography_mode: strict
+
+  - name: Adaptation Fund
+    url: https://www.adaptation-fund.org/apply-funding/
+    type: html
+
+  - name: CEPF Open Calls
+    url: https://www.cepf.net/grants/open-calls-for-proposals
+    type: html
+
+  - name: IKI (International Climate Initiative)
+    url: https://www.international-climate-initiative.com/en/find-funding/
+    type: html
+
+  # ---------- European Union ----------
+  - name: EU Funding & Tenders
+    url: https://ec.europa.eu/info/funding-tenders/opportunities/portal/
+    type: api
+    api: eu_funding_tenders
+    query: [Uzbekistan, Central Asia]   # also covers INTPA / EuropeAid calls
+
+  - name: ICMPD Calls for Proposals
+    url: https://www.icmpd.org/work-with-us/grants/calls-for-proposals
+    type: html
+
+  # ---------- Bilateral donors ----------
+  - name: Grants.gov (incl. US Embassy calls)
+    url: https://www.grants.gov/
+    type: api
+    api: grants_gov
+    query: [Uzbekistan, Central Asia]
+
+  - name: Global Affairs Canada Calls
+    url: https://www.international.gc.ca/world-monde/funding-financement/calls-appels/index.aspx?lang=eng
+    type: html
+
+  - name: Norad Calls (Norway)
+    url: https://www.norad.no/en/tools-publications/call-for-proposals/
+    type: html
+
+  - name: Sida Funding (Sweden)
+    url: https://www.sida.se/en/for-partners/funding
+    type: html
+
+  - name: Danida Open Calls (Denmark)
+    url: https://um.dk/en/danida-en/partners/open-calls/
+    type: html
+
+  - name: SDC Calls for Proposals (Switzerland)
+    url: https://www.eda.admin.ch/sdc/en/home/partnerships_tenders/calls-for-proposals.html
+    type: html
+
+  - name: Darwin Initiative (UK)
+    url: https://www.darwininitiative.org.uk/
+    type: html
+
+  - name: KOICA
+    url: https://www.koica.go.kr/
+    type: html
+    js: true
+
+  # ==========================================================================
+  #  SWITCHED OFF. Change  enabled: false  to  true  to try any of these.
+  # ==========================================================================
+
+  - name: Devex Funding
+    url: https://www.devex.com/funding
+    enabled: false        # funding listings need a paid Devex Pro subscription
+
+  - name: GrantStation
+    url: https://grantstation.com/
+    enabled: false        # paid membership, listings behind login
+
+  - name: GrantWatch
+    url: https://www.grantwatch.com/
+    enabled: false        # details behind paid membership; mostly US/Canada
+
+  - name: Grantway
+    url: https://www.grantway.com/
+    enabled: false        # paid subscription (Idox)
+
+  - name: OpenGrants
+    url: https://www.opengrants.io/
+    enabled: false        # requires login
+
+  - name: Instrumentl
+    url: https://www.instrumentl.com/
+    enabled: false        # paid, requires login
+
+  - name: 360Giving GrantNav
+    url: https://grantnav.threesixtygiving.org/
+    enabled: false        # database of grants already awarded in the UK, not open calls
+
+  - name: UNICEF Supply
+    url: https://www.unicef.org/supply
+    enabled: false        # UNICEF tenders are published on UNGM (already covered)
+
+  - name: EU INTPA Funding
+    url: https://international-partnerships.ec.europa.eu/funding_en
+    enabled: false        # INTPA calls are covered by the EU Funding & Tenders connector
+
+  - name: African Development Bank
+    url: https://www.afdb.org/en/projects-and-operations/procurement
+    enabled: false        # Africa only
+
+  - name: Inter-American Development Bank
+    url: https://www.iadb.org/en/projects/procurement
+    enabled: false        # Latin America and Caribbean only
+
+  - name: SAM.gov
+    url: https://sam.gov/
+    enabled: false        # US federal contracts; needs an API key
+
+  - name: USAID Business Forecast
+    url: https://www.usaid.gov/business-forecast
+    enabled: false        # USAID closed in 2025; US foreign-aid calls now appear on Grants.gov
+
+  - name: Work with USAID
+    url: https://www.workwithusaid.org/
+    enabled: false        # USAID closed in 2025
+
+  - name: UK Find a Grant
+    url: https://find-government-grants.service.gov.uk/
+    enabled: false        # UK domestic grants
+
+  - name: GrantConnect (Australia)
+    url: https://www.grants.gov.au/
+    enabled: false        # mostly Australian domestic grants
+
+  - name: MFAT NZ Contestable Funds
+    url: https://www.mfat.govt.nz/en/aid-and-development/working-with-us/contestable-funds/
+    enabled: false        # Pacific focus; NZ organisations
+
+  - name: Netherlands RVO
+    url: https://www.rvo.nl/en/subsidies-programmes
+    enabled: false        # catalogue of schemes, mainly for Dutch businesses
+
+  - name: Engagement Global (Germany)
+    url: https://www.engagement-global.de/funding-programmes.html
+    enabled: false        # for German organisations only
+
+  - name: JICA Partnership Program
+    url: https://www.jica.go.jp/english/our_work/partnership/
+    enabled: false        # for Japanese organisations only
+
+  - name: Opportunities for Africans
+    url: https://www.opportunitiesforafricans.com/
+    enabled: false        # Africa only
+
+  - name: WACSI
+    url: https://wacsi.org/opportunities/
+    enabled: false        # West Africa only
+
+  - name: NGO Pulse
+    url: https://www.ngopulse.org/grants
+    enabled: false        # South Africa only
+
+  - name: VC4A
+    url: https://vc4a.com/
+    enabled: false        # Africa startup programmes
+
+  - name: India Development Review
+    url: https://idronline.org/opportunities/
+    enabled: false        # India only
+
+  - name: Funding Centre (Australia)
+    url: https://www.fundingcentre.com.au/
+    enabled: false        # Australia; paid subscription
+
+  - name: DSC Funds Online (UK)
+    url: https://www.dsc.org.uk/funding-website/
+    enabled: false        # UK; paid subscription
+
+  - name: Charity Excellence Funding Finder (UK)
+    url: https://www.charityexcellence.co.uk/Home/FundingFinder
+    enabled: false        # UK; requires login
+
+  - name: CharityVillage (Canada)
+    url: https://charityvillage.com/grant-opportunities/
+    enabled: false        # Canada domestic
+
+  - name: Imagine Canada Grant Connect
+    url: https://www.imaginecanada.ca/en/programs/grant-connect
+    enabled: false        # Canada; paid subscription
+
+  - name: GrantReady (Australia)
+    url: https://www.grantready.com.au/
+    enabled: false        # Australia domestic

@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Funding Radar</title>
+<style>
+:root{
+  --bg:#f6f7f9;--surface:#fff;--text:#1b1f24;--muted:#5d6670;--line:#e2e5ea;
+  --accent:#0468b1;--accent-soft:#e6f0f8;--warn:#b25d00;--warn-soft:#fff3e3;--bad:#b3261e;--bad-soft:#fdecea;--ok:#1e7a3c;
+  --radius:10px;
+}
+@media (prefers-color-scheme: dark){
+  :root{--bg:#111418;--surface:#1a1e24;--text:#e7eaee;--muted:#9aa3ad;--line:#2c323a;
+    --accent:#5aa9e6;--accent-soft:#16283a;--warn:#f0a44b;--warn-soft:#2e2211;--bad:#f2867d;--bad-soft:#331a18;--ok:#6cc58a;}
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:1100px;margin:0 auto;padding:24px 16px 60px}
+header h1{margin:0;font-size:24px;letter-spacing:-.01em}
+header p{margin:4px 0 0;color:var(--muted)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:20px 0}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:12px 14px}
+.stat b{display:block;font-size:22px}
+.stat span{color:var(--muted);font-size:13px}
+.controls{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px;align-items:center}
+.controls input[type=search]{flex:1 1 260px;min-width:0}
+input,select{font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:8px 10px}
+label.chk{display:flex;gap:6px;align-items:center;color:var(--muted);font-size:14px}
+.list{display:flex;flex-direction:column;gap:10px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px}
+.card a.t{color:var(--text);font-weight:600;text-decoration:none;font-size:16px}
+.card a.t:hover{color:var(--accent);text-decoration:underline}
+.meta{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:6px;font-size:13px;color:var(--muted)}
+.pill{display:inline-block;padding:1px 8px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-size:12px;font-weight:600}
+.pill.soon{background:var(--warn-soft);color:var(--warn)}
+.pill.past{background:var(--bad-soft);color:var(--bad)}
+.pill.new{background:var(--accent);color:#fff}
+.sum{margin:8px 0 0;color:var(--muted);font-size:14px;overflow-wrap:anywhere}
+.empty{padding:40px;text-align:center;color:var(--muted);background:var(--surface);border:1px dashed var(--line);border-radius:var(--radius)}
+details.health{margin-top:28px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:12px 16px}
+details.health summary{cursor:pointer;font-weight:600}
+table{width:100%;border-collapse:collapse;margin-top:10px;font-size:14px}
+th,td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+td .smp{color:var(--muted);font-size:13px}
+.err{color:var(--bad);overflow-wrap:anywhere}
+.okc{color:var(--ok);font-weight:600}.badc{color:var(--bad);font-weight:600}
+.more{margin:14px auto 0;display:block}
+.more[hidden]{display:none}
+a{color:var(--accent)}
+button{font:inherit;cursor:pointer;background:var(--accent);color:#fff;border:0;border-radius:8px;padding:8px 16px}
+@media (max-width:600px){th:nth-child(3),td:nth-child(3){display:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Funding Radar</h1>
+    <p id="updated">Loading…</p>
+  </header>
+
+  <div class="stats" id="stats"></div>
+
+  <div class="controls">
+    <input type="search" id="q" placeholder="Search title, source, text…" aria-label="Search">
+    <select id="src" aria-label="Source"><option value="">All sources</option></select>
+    <select id="geo" aria-label="Geography">
+      <option value="">All geographies</option>
+      <option value="uz">Uzbekistan</option>
+      <option value="region">Central Asia / region</option>
+      <option value="global">Global / multi-country</option>
+      <option value="unknown">Geography not stated</option>
+    </select>
+    <select id="sort" aria-label="Sort">
+      <option value="found">Newest first</option>
+      <option value="deadline">Deadline soonest</option>
+    </select>
+    <label class="chk"><input type="checkbox" id="hidePast" checked> Hide expired</label>
+  </div>
+
+  <div class="list" id="list"></div>
+  <button class="more" id="more" hidden>Show more</button>
+
+  <details class="health" id="health">
+    <summary>Website status</summary>
+    <table><thead><tr><th>Site</th><th>Status</th><th>Listings</th><th>Examples found / note</th></tr></thead><tbody id="hbody"></tbody></table>
+  </details>
+</div>
+
+<script>
+const GEO = {uz:"🇺🇿 Uzbekistan", region:"🌏 Central Asia / region", global:"🌍 Global / multi-country", unknown:"❔ Geography not stated"};
+const $ = id => document.getElementById(id);
+let all = [], shown = 50;
+const today = new Date().toISOString().slice(0,10);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const fmt = iso => iso ? new Date(iso+"T00:00:00").toLocaleDateString("en-GB",{day:"numeric",month:"short",year:"numeric"}) : "";
+const daysTo = iso => Math.round((new Date(iso+"T00:00:00") - new Date(today+"T00:00:00"))/864e5);
+
+function remember(){ try{ localStorage.setItem("fr-filters", JSON.stringify({src:$("src").value,geo:$("geo").value,sort:$("sort").value,hidePast:$("hidePast").checked})) }catch(e){} }
+function restore(){ try{ const f = JSON.parse(localStorage.getItem("fr-filters")||"{}");
+  if(f.geo!==undefined) $("geo").value=f.geo; if(f.sort) $("sort").value=f.sort; if(f.hidePast!==undefined) $("hidePast").checked=f.hidePast; return f.src||""; }catch(e){ return "" } }
+
+function render(){
+  const q = $("q").value.trim().toLowerCase(), src = $("src").value, geo = $("geo").value, hide = $("hidePast").checked;
+  let rows = all.filter(o =>
+    (!src || o.source===src) && (!geo || o.geo===geo) &&
+    (!hide || !o.deadline || o.deadline >= today) &&
+    (!q || (o.title+" "+o.source+" "+(o.summary||"")).toLowerCase().includes(q)));
+  if($("sort").value==="deadline") rows.sort((a,b)=>(a.deadline||"9999").localeCompare(b.deadline||"9999"));
+  else rows.sort((a,b)=>b.found.localeCompare(a.found));
+  const list = $("list");
+  if(!rows.length){ list.innerHTML = `<div class="empty">${all.length ? "No opportunities match these filters." : "No opportunities yet. They will appear after the first daily run."}</div>`; $("more").hidden = true; return; }
+  list.innerHTML = rows.slice(0,shown).map(o=>{
+    let dl = "";
+    if(o.deadline){ const d = daysTo(o.deadline);
+      dl = d<0 ? `<span class="pill past">Closed ${fmt(o.deadline)}</span>` : d<=14 ? `<span class="pill soon">Deadline ${fmt(o.deadline)} · ${d} day${d===1?"":"s"} left</span>` : `<span class="pill">Deadline ${fmt(o.deadline)}</span>`; }
+    const isNew = daysTo(o.found) >= -2 ? `<span class="pill new">New</span>` : "";
+    return `<article class="card">
+      <a class="t" href="${esc(o.url)}" target="_blank" rel="noopener">${esc(o.title)}</a>
+      <div class="meta">${isNew}<span>${esc(o.source)}</span><span>${GEO[o.geo]||""}</span>${dl}<span>Found ${fmt(o.found)}</span></div>
+      ${o.summary && o.summary!==o.title ? `<p class="sum">${esc(o.summary.slice(0,260))}${o.summary.length>260?"…":""}</p>`:""}
+    </article>`}).join("");
+  $("more").hidden = rows.length <= shown;
+}
+
+function stats(){
+  const open = all.filter(o=>!o.deadline || o.deadline>=today);
+  const soon = open.filter(o=>o.deadline && daysTo(o.deadline)<=14).length;
+  const week = all.filter(o=>daysTo(o.found)>=-7).length;
+  const uz = open.filter(o=>o.geo==="uz"||o.geo==="region").length;
+  $("stats").innerHTML = [[open.length,"open opportunities"],[week,"found in last 7 days"],[soon,"closing within 14 days"],[uz,"Uzbekistan / region"]]
+    .map(([n,l])=>`<div class="stat"><b>${n}</b><span>${l}</span></div>`).join("");
+}
+
+async function load(){
+  try{
+    const [o, s] = await Promise.all([fetch("data/opportunities.json",{cache:"no-store"}).then(r=>r.json()), fetch("data/status.json",{cache:"no-store"}).then(r=>r.json())]);
+    all = o;
+    $("updated").textContent = s.updated ? "Last checked " + new Date(s.updated).toLocaleString("en-GB",{dateStyle:"medium",timeStyle:"short"}) + " · checks run every morning" : "Waiting for the first daily run";
+    const sources = [...new Set(all.map(x=>x.source))].sort();
+    const saved = restore();
+    $("src").innerHTML = `<option value="">All sources</option>` + sources.map(x=>`<option${x===saved?" selected":""}>${esc(x)}</option>`).join("");
+    const bad = s.sites.filter(x=>!x.ok || x.error).length;
+    $("health").querySelector("summary").textContent = `Website status (${s.sites.length} sites${bad?`, ${bad} need attention`:""})`;
+    if(bad) $("health").open = true;
+    $("hbody").innerHTML = s.sites.map(x=>`<tr><td><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.site)}</a></td>
+      <td class="${x.ok?"okc":"badc"}">${x.ok?"OK":"Failed"}</td><td>${x.listings}</td><td>${x.error?`<div class="err">${esc(x.error)}</div>`:""}${(x.sample||[]).map(t=>`<div class="smp">• ${esc(t)}</div>`).join("")}</td></tr>`).join("");
+    stats(); render();
+  }catch(e){ $("updated").textContent = "Could not load data."; }
+}
+["q","src","geo","sort","hidePast"].forEach(id=>$(id).addEventListener("input",()=>{shown=50;remember();render();}));
+$("more").onclick = ()=>{shown+=50;render();};
+load();
+</script>
+</body>
+</html>
