@@ -1,0 +1,61 @@
+name: Daily funding scan
+
+on:
+  schedule:
+    - cron: "0 3 * * *"   # every day at 03:00 UTC = 08:00 Tashkent
+  workflow_dispatch:       # adds a "Run workflow" button on GitHub
+    inputs:
+      test_telegram:
+        description: "Only send a test Telegram message"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: funding-scan
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install
+        run: |
+          pip install -r requirements.txt
+          if grep -Eq '^\s*js:\s*true' sites.yaml; then
+            pip install playwright && python -m playwright install --with-deps chromium
+          fi
+
+      - name: Test Telegram
+        if: ${{ inputs.test_telegram }}
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python -m scraper.main --test-telegram
+
+      - name: Scan websites
+        if: ${{ !inputs.test_telegram }}
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python -m scraper.main
+
+      - name: Save results
+        if: ${{ !inputs.test_telegram }}
+        run: |
+          git config user.name "funding-radar-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data docs/data
+          if git diff --cached --quiet; then echo "No changes"; else
+            git commit -m "Daily scan $(date -u +%Y-%m-%d)" && git push
+          fi
