@@ -1,17 +1,17 @@
 {
- "updated": "2026-09-28T06:36+00:00",
+ "updated": "2026-09-28T07:07+00:00",
  "sites": [
   {
    "site": "fundsforNGOs",
    "url": "https://www2.fundsforngos.org/feed/",
    "ok": true,
    "listings": 25,
-   "new": 2,
+   "new": 3,
    "error": "",
    "sample": [
-    "Wild Animal Initiative Fellowships for Early-Career Scientists",
-    "Infrastructure Development Fund Stream 2: Unlocking Infill Precincts (Australia)",
-    "Wild Animal Initiative Fellowships for Early-Career Scientists"
+    "beVisioneers: The Mercedes-Benz Fellowship Program",
+    "Call for Letters of Inquiry: GEF Small Grants Programme (Saint Vincent and the Grenadines)",
+    "CFPs: Strengthening Independent Journalism and Countering Disinformation in Moldova"
    ]
   },
   {
@@ -19,7 +19,7 @@
    "url": "https://www.proposalsforngos.com/",
    "ok": true,
    "listings": 26,
-   "new": 4,
+   "new": 2,
    "error": "",
    "sample": [
     "Top 5 Tips for Proposal on Refugee Issue",
@@ -30,32 +30,36 @@
   {
    "site": "Candid PND RFPs",
    "url": "https://philanthropynewsdigest.org/rfps",
-   "ok": true,
-   "listings": 0,
-   "new": 0,
-   "error": "no links found: page may need js: true, a link_pattern or item_selector",
-   "sample": []
-  },
-  {
-   "site": "Terra Viva Grants",
-   "url": "https://www.terravivagrants.org/",
-   "ok": true,
-   "listings": 7,
-   "new": 3,
-   "error": "",
-   "sample": [
-    "How it Works",
-    "Funding News",
-    "Grant Maker Profiles"
-   ]
-  },
-  {
-   "site": "Innovation for Change",
-   "url": "https://innovationforchange.net/opportunities/",
    "ok": false,
    "listings": 0,
    "new": 0,
-   "error": "could not download (404 Client Error: Not Found for url: https://innovationforchange.net/opportunities/)"
+   "error": "Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://philanthropynewsdigest.org/rfps\", waiting until \"networkidle\"\n"
+  },
+  {
+   "site": "Terra Viva Grants",
+   "url": "https://www.terravivagrants.org/funding-news/",
+   "ok": true,
+   "listings": 40,
+   "new": 1,
+   "error": "",
+   "sample": [
+    "International Fund for Agricultural Development — Rural Sector Performance Assessment for Policy and Investment",
+    "September 22, 2026",
+    "Ilka Westermeyer"
+   ]
+  },
+  {
+   "site": "Innovation for Change – Central Asia",
+   "url": "https://centralasia.innovationforchange.net/",
+   "ok": true,
+   "listings": 3,
+   "new": 0,
+   "error": "",
+   "sample": [
+    "Innovation For Change Central Asia",
+    "Explore Toolkits",
+    "Explore Innovation Gallery"
+   ]
   },
   {
    "site": "Opportunity Desk",
@@ -69,34 +73,6 @@
     "Mentora Scholars Fellowship 2027 (Fully-funded)",
     "Commonwealth Foundation Grant 2026-2027 (up to £15,000)"
    ]
-  },
-  {
-   "site": "AsianNGO",
-   "url": "https://www.asianngo.org/",
-   "ok": true,
-   "listings": 1,
-   "new": 0,
-   "error": "",
-   "sample": [
-    "Presence of partners across the globe"
-   ]
-  },
-  {
-   "site": "ReliefWeb",
-   "url": "https://reliefweb.int/funding",
-   "ok": true,
-   "listings": 0,
-   "new": 0,
-   "error": "no links found: page may need js: true, a link_pattern or item_selector",
-   "sample": []
-  },
-  {
-   "site": "GrantPortal",
-   "url": "https://www.grantportal.com/",
-   "ok": false,
-   "listings": 0,
-   "new": 0,
-   "error": "could not download (HTTPSConnectionPool(host='www.grantportal.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='www.grantportal.com', port=443): Fa"
   },
   {
    "site": "UN Democracy Fund",
@@ -114,10 +90,15 @@
   {
    "site": "World Bank Procurement (Uzbekistan)",
    "url": "https://projects.worldbank.org/en/projects-operations/procurement",
-   "ok": false,
-   "listings": 0,
-   "new": 0,
-   "error": "503 Server Error: Service Unavailable for url: https://search.worldbank.org/api/v2/procnotices?format=json&qterm=Uzbekistan&rows=100&os=0&srt=noticedate&order=desc&apilang=en"
+   "ok": true,
+   "listings": 100,
+   "new": 4,
+   "error": "",
+   "sample": [
+    "Request for Expression of Interest: Procurement of ESG Report Verification Services",
+    "Contract Award: Asphalting of internal roads of the 5th category in the MCA \"Dekhkonobod\" of the Kushtepa district of th",
+    "Contract Award: Asphalting of internal roads of the 5th category in the MCA \"Sarmozor\" of the Kushtepa district of the F"
+   ]
   },
   {
    "site": "ADB Tenders",
@@ -125,14 +106,14 @@
    "ok": false,
    "listings": 0,
    "new": 0,
-   "error": "could not download (403 Client Error: Forbidden for url: https://www.adb.org/projects/tenders)"
+   "error": "Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://www.adb.org/projects/tenders\", waiting until \"networkidle\"\n"
   },
   {
    "site": "Adaptation Fund",
    "url": "https://www.adaptation-fund.org/apply-funding/",
    "ok": true,
    "listings": 34,
-   "new": 16,
+   "new": 7,
    "error": "",
    "sample": [
     "Locally Led Adaptation",
@@ -145,7 +126,7 @@
    "url": "https://www.cepf.net/grants/open-calls-for-proposals",
    "ok": true,
    "listings": 15,
-   "new": 3,
+   "new": 1,
    "error": "",
    "sample": [
     "Before You Apply",
@@ -158,7 +139,7 @@
    "url": "https://www.international-climate-initiative.com/en/find-funding/",
    "ok": true,
    "listings": 10,
-   "new": 9,
+   "new": 0,
    "error": "",
    "sample": [
     "IKI Strategy 2030",
@@ -170,8 +151,8 @@
    "site": "EU Funding & Tenders",
    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/",
    "ok": true,
-   "listings": 32,
-   "new": 27,
+   "listings": 21,
+   "new": 0,
    "error": "",
    "sample": [
     "New approaches for decentralized, federated and sustainable AI data processing (RIA) (HORIZON-CL4-2027-04-DATA-03)",
@@ -184,7 +165,7 @@
    "url": "https://www.icmpd.org/work-with-us/grants/calls-for-proposals",
    "ok": true,
    "listings": 13,
-   "new": 9,
+   "new": 0,
    "error": "",
    "sample": [
     "Clarification Note N°1",
@@ -196,46 +177,44 @@
    "site": "Grants.gov (incl. US Embassy calls)",
    "url": "https://www.grants.gov/",
    "ok": true,
-   "listings": 101,
-   "new": 85,
+   "listings": 1,
+   "new": 1,
    "error": "",
    "sample": [
-    "Coordinating Agricultural Development &amp; Innovation (CADI) to enable America First Trade Wins in Europe, the South Ca",
-    "Middle East Regional Cooperation (MERC)",
-    "Paris Peace Agreements Report NOFO"
+    "Coordinating Agricultural Development & Innovation (CADI) to enable America First Trade Wins in Europe, the South Caucas"
    ]
   },
   {
-   "site": "Global Affairs Canada Calls",
-   "url": "https://www.international.gc.ca/world-monde/funding-financement/calls-appels/index.aspx?lang=eng",
-   "ok": false,
-   "listings": 0,
-   "new": 0,
-   "error": "could not download (404 Client Error: Not Found for url: https://www.international.gc.ca/world-monde/funding-financement/calls-appels/index.aspx?lang=eng)"
-  },
-  {
    "site": "Norad Calls (Norway)",
-   "url": "https://www.norad.no/en/tools-publications/call-for-proposals/",
-   "ok": false,
-   "listings": 0,
-   "new": 0,
-   "error": "could not download (404 Client Error: Not Found for url: https://www.norad.no/en/tools-publications/call-for-proposals/)"
+   "url": "https://www.norad.no/en/for-partners/guides-and-tools/calls-for-proposals2/",
+   "ok": true,
+   "listings": 2,
+   "new": 2,
+   "error": "",
+   "sample": [
+    "Call for proposals for the Norwegian development programme to reduce plastic pollution and marine litter – Stage 2 (by i",
+    "Call for proposal to support research and evidence generation on comprehensive and safe abortion care Deadline: 10/1/202"
+   ]
   },
   {
-   "site": "Sida Funding (Sweden)",
-   "url": "https://www.sida.se/en/for-partners/funding",
-   "ok": false,
+   "site": "Sida Calls (Sweden)",
+   "url": "https://www.sida.se/en/for-partners/calls-and-announcements",
+   "ok": true,
    "listings": 0,
    "new": 0,
-   "error": "could not download (404 Client Error: Not Found for url: https://www.sida.se/en/for-partners/funding)"
+   "error": "no links found: page may need js: true, a link_pattern or item_selector",
+   "sample": []
   },
   {
-   "site": "Danida Open Calls (Denmark)",
-   "url": "https://um.dk/en/danida-en/partners/open-calls/",
-   "ok": false,
-   "listings": 0,
+   "site": "Danida Calls (Denmark)",
+   "url": "https://um.dk/danida/calls-for-proposals/",
+   "ok": true,
+   "listings": 1,
    "new": 0,
-   "error": "could not download (404 Client Error: Not Found for url: https://um.dk/en/danida-en/partners/open-calls/)"
+   "error": "",
+   "sample": [
+    "Aid Management Guidelines"
+   ]
   },
   {
    "site": "SDC Calls for Proposals (Switzerland)",
@@ -243,24 +222,24 @@
    "ok": false,
    "listings": 0,
    "new": 0,
-   "error": "could not download (403 Client Error: Forbidden for url: https://www.eda.admin.ch/sdc/en/home/partnerships_tenders/calls-for-proposals.html)"
+   "error": "Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://www.eda.admin.ch/sdc/en/home/partnerships_tenders/calls-for-proposals.html\", waiting until \"networkidle\"\n"
   },
   {
    "site": "Darwin Initiative (UK)",
-   "url": "https://www.darwininitiative.org.uk/",
+   "url": "https://www.darwininitiative.org.uk/news/",
    "ok": true,
-   "listings": 4,
-   "new": 0,
+   "listings": 136,
+   "new": 41,
    "error": "",
    "sample": [
-    "Find Out More >",
+    "Read Article",
     "Read Article",
     "Read Article"
    ]
   },
   {
-   "site": "KOICA",
-   "url": "https://www.koica.go.kr/",
+   "site": "KOICA Notices",
+   "url": "https://www.koica.go.kr/koica_kr/982/subview.do",
    "ok": true,
    "listings": 0,
    "new": 0,
