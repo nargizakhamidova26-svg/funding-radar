@@ -61,6 +61,21 @@ settings:
     - award ceremony
     - results announced
     - winners announced
+    - approved
+    - clarification
+    - presentation
+    - guideline
+    - guidelines
+    - how to apply
+    - how to register
+    - contact
+    - newsletter
+    - FAQ
+    - Q&A
+    - annual report
+    - tips
+    - click here
+    - life cycle
     - 채용
 
   # Visit each new opportunity page to read its deadline and eligibility text.
@@ -100,20 +115,22 @@ sites:
   - name: Proposals for NGOs
     url: https://www.proposalsforngos.com/
     type: html
+    # mostly proposal-writing tips; grant posts with past years in the title are skipped
 
   - name: Candid PND RFPs
     url: https://philanthropynewsdigest.org/rfps
     type: html
+    js: true                 # the list is built with JavaScript
     link_pattern: /rfps/[^?#]+
     # Mostly US-focused; the geography filter removes US-only calls it can detect.
 
   - name: Terra Viva Grants
-    url: https://www.terravivagrants.org/
+    url: https://www.terravivagrants.org/funding-news/
     type: html
 
-  - name: Innovation for Change
-    url: https://innovationforchange.net/opportunities/
-    type: html
+  - name: Innovation for Change – Central Asia
+    url: https://centralasia.innovationforchange.net/
+    type: html                # the global /opportunities/ page no longer exists
 
   - name: Opportunity Desk
     url: https://opportunitydesk.org/feed/
@@ -122,15 +139,15 @@ sites:
 
   - name: AsianNGO
     url: https://www.asianngo.org/
-    type: html
+    enabled: false        # the homepage has no list of calls
 
   - name: ReliefWeb
     url: https://reliefweb.int/funding
-    type: html
+    enabled: false        # ReliefWeb does not publish a list of funding calls
 
   - name: GrantPortal
     url: https://www.grantportal.com/
-    type: html
+    enabled: false        # website address no longer exists
 
   # ---------- UN system ----------
   - name: UNGM
@@ -172,6 +189,7 @@ sites:
   - name: ADB Tenders
     url: https://www.adb.org/projects/tenders
     type: html
+    js: true                 # ADB blocks simple downloads; a real browser is used
     geography_mode: strict
 
   - name: Adaptation Fund
@@ -192,6 +210,7 @@ sites:
     type: api
     api: eu_funding_tenders
     query: [Uzbekistan, Central Asia]   # also covers INTPA / EuropeAid calls
+    geography_mode: local    # only calls that name Uzbekistan or Central Asia
 
   - name: ICMPD Calls for Proposals
     url: https://www.icmpd.org/work-with-us/grants/calls-for-proposals
@@ -204,34 +223,38 @@ sites:
     api: grants_gov
     query: [Uzbekistan, Central Asia]
 
-  - name: Global Affairs Canada Calls
-    url: https://www.international.gc.ca/world-monde/funding-financement/calls-appels/index.aspx?lang=eng
-    type: html
-
   - name: Norad Calls (Norway)
-    url: https://www.norad.no/en/tools-publications/call-for-proposals/
+    url: https://www.norad.no/en/for-partners/guides-and-tools/calls-for-proposals2/
     type: html
+    link_pattern: /calls-for-proposals2/.+
 
-  - name: Sida Funding (Sweden)
-    url: https://www.sida.se/en/for-partners/funding
+  - name: Sida Calls (Sweden)
+    url: https://www.sida.se/en/for-partners/calls-and-announcements
     type: html
+    link_pattern: /calls-and-announcements/.+
 
-  - name: Danida Open Calls (Denmark)
-    url: https://um.dk/en/danida-en/partners/open-calls/
+  - name: Danida Calls (Denmark)
+    url: https://um.dk/danida/calls-for-proposals/
     type: html
 
   - name: SDC Calls for Proposals (Switzerland)
     url: https://www.eda.admin.ch/sdc/en/home/partnerships_tenders/calls-for-proposals.html
     type: html
+    js: true                 # the site blocks simple downloads; a real browser is used
 
   - name: Darwin Initiative (UK)
-    url: https://www.darwininitiative.org.uk/
+    url: https://www.darwininitiative.org.uk/news/
     type: html
+    link_pattern: /news/20
 
-  - name: KOICA
-    url: https://www.koica.go.kr/
+  - name: KOICA Notices
+    url: https://www.koica.go.kr/koica_kr/982/subview.do
     type: html
-    js: true
+    js: true                 # Korean notice board; matched with Korean keywords (공모, 입찰 …)
+
+  - name: Global Affairs Canada
+    url: https://www.international.gc.ca/world-monde/funding-financement/index.aspx?lang=eng
+    enabled: false        # Canada has no page listing current calls; they are announced one by one
 
   # ==========================================================================
   #  SWITCHED OFF. Change  enabled: false  to  true  to try any of these.

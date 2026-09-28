@@ -7,11 +7,12 @@
 from __future__ import annotations
 
 import argparse
+import html as htmllib
 import json
 import os
 import sys
 import traceback
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 import yaml
@@ -19,7 +20,8 @@ import yaml
 from . import fetch
 from .apis import fetch_api
 from .extract import extract_html, extract_rss, item_id, main_text
-from .filters import GEO_ORDER, KeywordFilter, classify_geography, extract_deadline, geography_passes
+from .filters import (GEO_ORDER, KeywordFilter, classify_geography, extract_deadline, geography_passes,
+                      is_stale_title)
 from .notify import build_messages, send
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -28,6 +30,10 @@ SEEN = ROOT / "data" / "seen.json"
 OPPS = ROOT / "docs" / "data" / "opportunities.json"
 STATUS = ROOT / "docs" / "data" / "status.json"
 MAX_STORED = 3000
+# Bump this when filters change a lot: stored results are cleared and every site gets a fresh
+# (silent) baseline on the next run, so old junk disappears from the dashboard.
+DATA_VERSION = 2
+MIN_TITLE_WORDS = 4  # for plain web pages without a link_pattern
 
 
 def load_json(path: Path, default):
@@ -72,6 +78,7 @@ def process_site(site: dict, settings: dict, kw: KeywordFilter, seen_ids: dict, 
         items = extract_html(html, site["url"], site)
         require_default = not (site.get("link_pattern") or site.get("item_selector"))
     require_kw = site.get("require_keywords", require_default)
+    auto_html = stype == "html" and not (site.get("link_pattern") or site.get("item_selector"))
 
     found = items
     fresh = [it for it in items if item_id(it["url"]) not in seen_ids]
@@ -84,10 +91,18 @@ def process_site(site: dict, settings: dict, kw: KeywordFilter, seen_ids: dict, 
     for it in fresh:
         iid = item_id(it["url"])
         seen_ids[iid] = today
+        it["title"] = htmllib.unescape(it["title"]).replace("\xa0", " ").strip()
         head = f"{it['title']} \n {it.get('summary', '')}"
-        if kw.excluded(it["title"]):
+        if kw.excluded(it["title"]) or is_stale_title(it["title"]):
             continue
-        if require_kw and not kw.included(head):
+        # On plain web pages the surrounding text often says "grant" even for menu links,
+        # so there the keyword must be in the link title itself.
+        if require_kw and not kw.included(it["title"] if auto_html else head):
+            continue
+        if auto_html and len(it["title"].split()) < MIN_TITLE_WORDS:
+            continue
+        deadline = it.get("deadline")
+        if deadline and deadline < today:
             continue
         body = ""
         if settings.get("fetch_details", True) and details_left > 0 and not it["url"].lower().endswith(".pdf"):
@@ -97,13 +112,13 @@ def process_site(site: dict, settings: dict, kw: KeywordFilter, seen_ids: dict, 
                 body = main_text(raw.decode("utf-8", errors="replace"))
             except Exception as e:  # a broken detail page should not stop the run
                 print(f"   detail page failed: {it['url']} ({e})")
-        geo = classify_geography(head, body)
+        geo = classify_geography(head, body, it["title"])
         if not geography_passes(geo, site.get("geography_mode", settings.get("geography_mode", "relaxed"))):
             continue
         accepted.append({
             "id": iid, "title": it["title"], "url": it["url"], "source": site["name"],
             "summary": (it.get("summary") or body)[:400], "geo": geo,
-            "deadline": it.get("deadline") or extract_deadline(it.get("summary", ""), body, it["title"]),
+            "deadline": deadline or extract_deadline(it.get("summary", ""), body, it["title"]),
             "found": today,
         })
     return accepted, found
@@ -118,6 +133,10 @@ def run(dry_run: bool = False) -> int:
     seen = load_json(SEEN, {"sites": {}, "ids": {}})
     opps = load_json(OPPS, [])
     today = date.today().isoformat()
+    if seen.get("version", 1) < DATA_VERSION:
+        print("Filters upgraded: clearing stored results and rebuilding the baseline.")
+        seen, opps = {"version": DATA_VERSION, "sites": {}, "ids": {}}, []
+    seen["version"] = DATA_VERSION
 
     new_items, new_sites, failed, status = [], [], [], []
     for site in sites:
@@ -127,6 +146,7 @@ def run(dry_run: bool = False) -> int:
         print(f"→ {name}{' (first run)' if first_time else ''}")
         try:
             accepted, listings = process_site(site, settings, kw, seen["ids"], today, first_time)
+            accepted = [a for a in accepted if not (a["deadline"] and a["deadline"] < today)]
             found = len(listings)
             if first_time:
                 seen["sites"][name] = today
@@ -148,6 +168,8 @@ def run(dry_run: bool = False) -> int:
     fetch.close()
 
     new_items.sort(key=lambda x: (GEO_ORDER.get(x["geo"], 9), x.get("deadline") or "9999"))
+    cutoff = (date.today() - timedelta(days=60)).isoformat()   # drop calls closed > 60 days ago
+    opps = [o for o in opps if not (o.get("deadline") and o["deadline"] < cutoff)]
     opps = sorted(opps, key=lambda x: x["found"], reverse=True)[:MAX_STORED]
 
     save_json(OPPS, opps)

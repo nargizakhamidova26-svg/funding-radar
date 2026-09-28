@@ -5,8 +5,11 @@ Use in sites.yaml with:   type: api   api: <name>   query: <search words>
 """
 from __future__ import annotations
 
+import html
 import json
-from datetime import datetime
+import re
+import time
+from datetime import date, datetime
 
 import requests
 
@@ -18,15 +21,28 @@ def _iso(value: str | None, fmts=("%Y-%m-%dT%H:%M:%S.%f%z", "%Y-%m-%dT%H:%M:%S%z
     if not value:
         return None
     v = str(value).strip()
+    d = None
     for f in fmts:
         try:
-            return datetime.strptime(v, f).date().isoformat()
+            d = datetime.strptime(v, f).date()
+            break
         except ValueError:
             continue
-    try:
-        return datetime.fromisoformat(v.replace("Z", "+00:00")).date().isoformat()
-    except ValueError:
-        return None
+    if d is None:
+        try:
+            d = datetime.fromisoformat(v.replace("Z", "+00:00")).date()
+        except ValueError:
+            return None
+    return None if d.year >= 2090 else d.isoformat()   # "2099-01-01" means "no deadline"
+
+
+def _clean(text) -> str:
+    return re.sub(r"\s+", " ", html.unescape(str(text or "")).replace("\xa0", " ")).strip()
+
+
+# Words that show an item is really about Uzbekistan / Central Asia
+LOCAL = re.compile(r"uzbek|tashkent|central asia|kazakh|kyrgyz|tajik|turkmen|aral sea|samarkand|karakalpak",
+                   re.IGNORECASE)
 
 
 def _first(v):
@@ -61,12 +77,16 @@ def eu_funding_tenders(site: dict) -> list[dict]:
             title = _first(md.get("title")) or res.get("title") or res.get("summary")
             if not ident or not title:
                 continue
-            call = _first(md.get("callTitle")) or ""
+            call = _clean(_first(md.get("callTitle")))
+            title = _clean(title)
+            deadline = _iso(_first(md.get("deadlineDate")))
+            if deadline and deadline < date.today().isoformat():
+                continue   # closed
             items.append({
-                "title": f"{title}" if ident in title else f"{title} ({ident})",
+                "title": title if ident in title else f"{title} ({ident})",
                 "url": EU_TOPIC.format(ident),
-                "summary": " · ".join(x for x in (call, (res.get("summary") or "")[:300]) if x),
-                "deadline": _iso(_first(md.get("deadlineDate"))),
+                "summary": " · ".join(x for x in (call, _clean(res.get("summary"))[:300]) if x),
+                "deadline": deadline,
             })
     return items
 
@@ -91,8 +111,13 @@ def grants_gov(site: dict) -> list[dict]:
         for h in (data.get("data") or {}).get("oppHits", []):
             if not h.get("id") or not h.get("title"):
                 continue
+            # The keyword search also matches words deep inside long documents, so keep only
+            # opportunities whose title, agency or number point to Uzbekistan / Central Asia.
+            where = " ".join(str(h.get(k) or "") for k in ("title", "agency", "agencyCode", "number"))
+            if not (LOCAL.search(where) or re.search(r"\b(UZB|KAZ|KGZ|TJK|TKM|SCA)\b", where)):
+                continue
             items.append({
-                "title": h["title"],
+                "title": _clean(h["title"]),
                 "url": f"https://www.grants.gov/search-results-detail/{h['id']}",
                 "summary": " · ".join(x for x in (h.get("agency") or h.get("agencyCode"), h.get("number"),
                                                    (h.get("oppStatus") or "").title()) if x),
@@ -106,25 +131,35 @@ def grants_gov(site: dict) -> list[dict]:
 # --------------------------------------------------------------------------
 
 WB_API = "https://search.worldbank.org/api/v2/procnotices"
+WB_API_OLD = "https://search.worldbank.org/api/procnotices"
 WB_NOTICE = "https://projects.worldbank.org/en/projects-operations/procurement-detail/{}"
 
 
 def world_bank(site: dict) -> list[dict]:
     items = []
     for q in _queries(site, default="Uzbekistan"):
-        _wait()
-        r = requests.get(WB_API, params={"format": "json", "qterm": q, "rows": 100, "os": 0,
-                                         "srt": "noticedate", "order": "desc", "apilang": "en"},
-                         headers=HEADERS, timeout=45)
-        r.raise_for_status()
-        data = r.json()
+        params = {"format": "json", "qterm": q, "rows": 100, "os": 0,
+                  "srt": "noticedate", "order": "desc", "apilang": "en"}
+        data, last = None, None
+        for attempt, url in enumerate([WB_API, WB_API, WB_API_OLD]):  # the API is sometimes briefly busy
+            _wait()
+            try:
+                r = requests.get(url, params=params, headers=HEADERS, timeout=45)
+                r.raise_for_status()
+                data = r.json()
+                break
+            except (requests.RequestException, ValueError) as e:
+                last = e
+                time.sleep(10 * (attempt + 1))
+        if data is None:
+            raise RuntimeError(f"World Bank API not available today ({last})")
         notices = data.get("procnotices") or data.get("documents") or []
         if isinstance(notices, dict):
             notices = list(notices.values())
         for n in notices:
             if not isinstance(n, dict) or not n.get("id"):
                 continue
-            desc = n.get("bid_description") or n.get("project_name") or ""
+            desc = _clean(n.get("bid_description") or n.get("project_name"))
             ntype = n.get("notice_type") or ""
             title = f"{ntype}: {desc}" if ntype and desc else (desc or ntype)
             if not title:

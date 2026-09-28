@@ -112,14 +112,25 @@ GEO_LABELS = {
 GEO_ORDER = {"uz": 0, "region": 1, "global": 2, "unknown": 3, "other": 4}
 
 
-def classify_geography(headline: str, body: str = "") -> str:
-    """headline = title + listing snippet (reliable); body = detail page main text (noisier)."""
+def _distinct_countries(text: str) -> int:
+    return len({m.lower() for m in RX_OTHER.findall(text or "")})
+
+
+def classify_geography(headline: str, body: str = "", title: str = "") -> str:
+    """headline = title + listing snippet (reliable); body = detail page main text (noisier);
+    title = the opportunity title alone (most reliable)."""
     head = headline or ""
+    title = title or head
+    # A page that names many countries is usually a country drop-down or a sidebar, not eligibility.
+    if body and _distinct_countries(body) >= 12:
+        body = ""
     full = head + " \n " + (body or "")
     if RX_UZ.search(full):
         return "uz"
     if RX_REGION.search(full):
         return "region"
+    if RX_OTHER.search(title):          # "Grants for SMEs (Malta)" beats a generic "global" elsewhere
+        return "other"
     if RX_GLOBAL.search(head):
         return "global"
     if RX_OTHER.search(head):
@@ -139,9 +150,20 @@ def geography_passes(geo: str, mode: str) -> bool:
     mode = (mode or "relaxed").lower()
     if mode == "off":
         return True
+    if mode == "local":      # only calls that explicitly name Uzbekistan or the region
+        return geo in ("uz", "region")
     if mode == "strict":
         return geo in ("uz", "region", "global")
     return geo != "other"
+
+
+RX_YEAR = re.compile(r"\b(20[1-3]\d)\b")
+
+
+def is_stale_title(title: str, today: date | None = None) -> bool:
+    """True when every year mentioned in the title is in the past, e.g. 'Grants 2023'."""
+    years = [int(y) for y in RX_YEAR.findall(title or "")]
+    return bool(years) and max(years) < (today or date.today()).year
 
 
 # --------------------------------------------------------------------------

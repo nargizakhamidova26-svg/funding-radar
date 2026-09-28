@@ -36,8 +36,13 @@ def build_messages(new_items: list[dict], new_sites: list[tuple[str, int]], fail
     head = (f"🔔 <b>{n} new funding opportunit{'y' if n == 1 else 'ies'}</b> · {today}" if n
             else f"📭 No new funding opportunities today · {today}")
     footer = []
-    for name, count in new_sites:
-        footer.append(f"➕ New site added: <b>{html.escape(name)}</b> ({count} current listings saved to the dashboard)")
+    if len(new_sites) > 5:
+        total = sum(c for _, c in new_sites)
+        footer.append(f"➕ Baseline built for <b>{len(new_sites)} websites</b> "
+                      f"({total} current listings saved to the dashboard). From tomorrow you get only new calls.")
+    else:
+        for name, count in new_sites:
+            footer.append(f"➕ New site added: <b>{html.escape(name)}</b> ({count} current listings saved to the dashboard)")
     if failed:
         footer.append("⚠️ Could not read: " + ", ".join(html.escape(f) for f in failed))
     if dashboard_url:
