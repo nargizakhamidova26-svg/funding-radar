@@ -10,6 +10,7 @@ import argparse
 import html as htmllib
 import json
 import os
+import re
 import sys
 import traceback
 from datetime import date, datetime, timedelta, timezone
@@ -56,6 +57,15 @@ def dashboard_url() -> str | None:
         owner, name = repo.split("/", 1)
         return f"https://{owner.lower()}.github.io/{name}/"
     return None
+
+
+def watched(text: str, settings: dict) -> str:
+    """Name of a watched funder mentioned in the text, or ""."""
+    text = (text or "").replace("\u2019", "'")   # curly apostrophe, e.g. L’Oréal
+    for name in settings.get("watch_funders") or []:
+        if re.search(r"(?<![\w])" + re.escape(str(name)) + r"(?![\w])", text, re.IGNORECASE):
+            return str(name)
+    return ""
 
 
 def process_site(site: dict, settings: dict, kw: KeywordFilter, seen_ids: dict, today: str,
@@ -120,6 +130,7 @@ def process_site(site: dict, settings: dict, kw: KeywordFilter, seen_ids: dict, 
             "summary": (it.get("summary") or body)[:400], "geo": geo,
             "deadline": deadline or extract_deadline(it.get("summary", ""), body, it["title"]),
             "found": today,
+            "watch": watched(f"{it['title']} {it.get('summary', '')}", settings),
         })
     return accepted, found
 
@@ -167,7 +178,7 @@ def run(dry_run: bool = False) -> int:
                            "error": str(e)[:200]})
     fetch.close()
 
-    new_items.sort(key=lambda x: (GEO_ORDER.get(x["geo"], 9), x.get("deadline") or "9999"))
+    new_items.sort(key=lambda x: (not x.get("watch"), GEO_ORDER.get(x["geo"], 9), x.get("deadline") or "9999"))
     cutoff = (date.today() - timedelta(days=60)).isoformat()   # drop calls closed > 60 days ago
     opps = [o for o in opps if not (o.get("deadline") and o["deadline"] < cutoff)]
     opps = sorted(opps, key=lambda x: x["found"], reverse=True)[:MAX_STORED]

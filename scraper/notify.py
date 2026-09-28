@@ -22,7 +22,8 @@ def _fmt_date(iso: str | None) -> str:
 
 def _item_block(n: int, it: dict) -> str:
     e = html.escape
-    lines = [f"<b>{n}. {e(it['title'])}</b>",
+    star = f"⭐ <i>Watched funder: {e(it['watch'])}</i>\n" if it.get("watch") else ""
+    lines = [f"{star}<b>{n}. {e(it['title'])}</b>",
              f"🏛 {e(it['source'])}  ·  {GEO_ICON.get(it['geo'], '')} {e(GEO_LABELS.get(it['geo'], ''))}",
              f"⏰ Deadline: {_fmt_date(it.get('deadline'))}",
              f"🔗 <a href=\"{e(it['url'], quote=True)}\">Open</a>"]

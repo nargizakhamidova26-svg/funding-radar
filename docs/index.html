@@ -114,7 +114,7 @@ function render(){
     let dl = "";
     if(o.deadline){ const d = daysTo(o.deadline);
       dl = d<0 ? `<span class="pill past">Closed ${fmt(o.deadline)}</span>` : d<=14 ? `<span class="pill soon">Deadline ${fmt(o.deadline)} · ${d} day${d===1?"":"s"} left</span>` : `<span class="pill">Deadline ${fmt(o.deadline)}</span>`; }
-    const isNew = daysTo(o.found) >= -2 ? `<span class="pill new">New</span>` : "";
+    const isNew = (daysTo(o.found) >= -2 ? `<span class="pill new">New</span>` : "") + (o.watch ? `<span class="pill soon">⭐ ${esc(o.watch)}</span>` : "");
     return `<article class="card">
       <a class="t" href="${esc(o.url)}" target="_blank" rel="noopener">${esc(o.title)}</a>
       <div class="meta">${isNew}<span>${esc(o.source)}</span><span>${GEO[o.geo]||""}</span>${dl}<span>Found ${fmt(o.found)}</span></div>

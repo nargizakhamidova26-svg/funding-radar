@@ -34,6 +34,9 @@ settings:
     - financing facility
     - challenge fund
     - innovation challenge
+    - impact challenge
+    - grand challenge
+    - women's initiative
     - tender
     - solicitation
     - RFP
@@ -77,6 +80,58 @@ settings:
     - click here
     - life cycle
     - 채용
+
+  # Funders to watch. When a new call on any site names one of these, it is marked with ⭐
+  # and shown first in Telegram. Their own websites rarely list open calls, so the grant
+  # websites above (fundsforNGOs, Opportunity Desk, Candid …) are where these calls appear.
+  watch_funders:
+    - Visa Foundation
+    - Mastercard
+    - Coca-Cola
+    - L'Oréal
+    - L'Oreal
+    - Unilever
+    - Nestlé
+    - Nestle
+    - Citi Foundation
+    - Google.org
+    - Microsoft
+    - Amazon
+    - AWS
+    - Meta
+    - Samsung
+    - Hyundai
+    - LG
+    - HSBC
+    - Standard Chartered
+    - JPMorgan
+    - J.P. Morgan
+    - Goldman Sachs
+    - 10,000 Women
+    - Cartier
+    - Chanel
+    - H&M Foundation
+    - IKEA Foundation
+    - Shell Foundation
+    - Vodafone
+    - Orange Foundation
+    - Ericsson
+    - Cisco
+    - Oracle
+    - SAP
+    - Deloitte
+    - Accenture
+    - DHL
+    - Hilti Foundation
+    - UPS Foundation
+    - Walmart Foundation
+    - PepsiCo
+    - Mondelez
+    - Danone
+    - Lactalis
+    - Bayer
+    - Novartis
+    - Pfizer
 
   # Visit each new opportunity page to read its deadline and eligibility text.
   fetch_details: true
@@ -149,6 +204,35 @@ sites:
     url: https://www.grantportal.com/
     enabled: false        # website address no longer exists
 
+  # ---------- Philanthropic foundations ----------
+  - name: Terra Viva – Eurasia / Central Asia
+    url: https://www.terravivagrants.org/tag/eurasia/
+    type: html               # Terra Viva's funding news tagged for Eurasia and Central Asia
+
+  - name: Google.org Impact Challenges
+    url: https://www.google.org/impact-challenges/
+    type: html               # e.g. AI for Government Innovation, AI for Science
+
+  - name: Citi Foundation Global Innovation Challenge
+    url: https://www.citigroup.com/global/foundation/programs/global-innovation-challenge
+    type: html               # 2026 round: preparing youth for AI (launched Sept 2026)
+
+  - name: Cartier Women's Initiative
+    url: https://www.cartierwomensinitiative.com/
+    type: html               # yearly awards for women impact entrepreneurs, all countries
+
+  - name: Gates Foundation Grand Challenges
+    url: https://gcgh.grandchallenges.org/grant-opportunities
+    type: html
+
+  - name: Fondation Botnar
+    url: https://www.fondationbotnar.org/funding-opportunities/
+    type: html               # young people, digital, cities
+
+  - name: Bezos Earth Fund – AI for Climate and Nature
+    url: https://aiforclimateandnature.org/
+    type: html
+
   # ---------- UN system ----------
   - name: UNGM
     enabled: false        # switched off at your request
@@ -180,18 +264,6 @@ sites:
     type: html
 
   # ---------- Multilateral banks and climate funds ----------
-  - name: World Bank Procurement (Uzbekistan)
-    url: https://projects.worldbank.org/en/projects-operations/procurement
-    type: api
-    api: world_bank
-    query: Uzbekistan
-
-  - name: ADB Tenders
-    url: https://www.adb.org/projects/tenders
-    type: html
-    js: true                 # ADB blocks simple downloads; a real browser is used
-    geography_mode: strict
-
   - name: Adaptation Fund
     url: https://www.adaptation-fund.org/apply-funding/
     type: html
