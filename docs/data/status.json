@@ -1,17 +1,17 @@
 {
- "updated": "2026-09-28T09:53+00:00",
+ "updated": "2026-09-29T03:24+00:00",
  "sites": [
   {
    "site": "fundsforNGOs",
    "url": "https://www2.fundsforngos.org/feed/",
    "ok": true,
    "listings": 25,
-   "new": 3,
+   "new": 2,
    "error": "",
    "sample": [
-    "Applications open for Community Grants Scheme 2027 (Ireland)",
-    "Apply for Leeds Sports Club Equipment Grant (United Kingdom)",
-    "RFAs: International Presence Support for Swiss Musicians (Switzerland)"
+    "Bringing Top Global Talent to Israeli Bio-Pharma Industry (Israel)",
+    "Request for Applications: Lifelong Learning Projects in Montenegro",
+    "SILab Incubation Program for Rehabilitation Centers (Ukraine)"
    ]
   },
   {
@@ -70,10 +70,94 @@
    "new": 0,
    "error": "",
    "sample": [
-    "IHS AI Workforce Faculty Research Grant Program 2027 (up to $20,000)",
-    "Mentora Scholars Fellowship 2027 (Fully-funded)",
-    "Commonwealth Foundation Grant 2026-2027 (up to £15,000)"
+    "Ashoka Carnegie Challenge for Civic Leadership 2027",
+    "Melton Foundation Global Solvers Accelerator 2027",
+    "TWAS-SISSA-Lincei Research Cooperation Visits Programme 2026 (Funded)"
    ]
+  },
+  {
+   "site": "Terra Viva – Eurasia / Central Asia",
+   "url": "https://www.terravivagrants.org/tag/eurasia/",
+   "ok": true,
+   "listings": 11,
+   "new": 3,
+   "error": "",
+   "sample": [
+    "MedWet — World Wetlands Day 2027 Awareness Grants",
+    "Ilka Westermeyer",
+    "Climate and Clean Air Coalition — Super Pollutant Country Action Accelerator"
+   ]
+  },
+  {
+   "site": "Google.org Impact Challenges",
+   "url": "https://www.google.org/impact-challenges/",
+   "ok": true,
+   "listings": 2,
+   "new": 2,
+   "error": "",
+   "sample": [
+    "Google.org Impact Challenge: AI for Government Innovation Transform how public services function for social good. Learn ",
+    "Google.org Impact Challenge: AI for Science Accelerating scientific breakthroughs with the power of AI. Learn more"
+   ]
+  },
+  {
+   "site": "Citi Foundation Global Innovation Challenge",
+   "url": "https://www.citigroup.com/global/foundation/programs/global-innovation-challenge",
+   "ok": true,
+   "listings": 17,
+   "new": 6,
+   "error": "",
+   "sample": [
+    "Citi Foundation",
+    "Meet the Global Innovation Challenge Grantees Accelerating Youth Employability",
+    "Citi Foundation Announces Recipients of 2025 Global Innovation Challenge, Granting a Collective $25 Million to 50 Nonpro"
+   ]
+  },
+  {
+   "site": "Cartier Women's Initiative",
+   "url": "https://www.cartierwomensinitiative.com/",
+   "ok": true,
+   "listings": 11,
+   "new": 0,
+   "error": "",
+   "sample": [
+    "Regional awards",
+    "Science & Technology pioneer award",
+    "Impact Awards"
+   ]
+  },
+  {
+   "site": "Gates Foundation Grand Challenges",
+   "url": "https://gcgh.grandchallenges.org/grant-opportunities",
+   "ok": true,
+   "listings": 1,
+   "new": 0,
+   "error": "",
+   "sample": [
+    "Innovations in Low-Cost and Simplified Pathogen Sequencing Workflows"
+   ]
+  },
+  {
+   "site": "Fondation Botnar",
+   "url": "https://www.fondationbotnar.org/funding-opportunities/",
+   "ok": true,
+   "listings": 3,
+   "new": 0,
+   "error": "",
+   "sample": [
+    "market-based approach to philanthropy",
+    "values and principles",
+    "Global Access Approach here"
+   ]
+  },
+  {
+   "site": "Bezos Earth Fund – AI for Climate and Nature",
+   "url": "https://aiforclimateandnature.org/",
+   "ok": true,
+   "listings": 0,
+   "new": 0,
+   "error": "no links found: page may need js: true, a link_pattern or item_selector",
+   "sample": []
   },
   {
    "site": "UN Democracy Fund",
@@ -87,27 +171,6 @@
     "UNDEF CSO Round Table during the 70th session of the CSW",
     "Engaging Armenian Youth in Local Governance"
    ]
-  },
-  {
-   "site": "World Bank Procurement (Uzbekistan)",
-   "url": "https://projects.worldbank.org/en/projects-operations/procurement",
-   "ok": true,
-   "listings": 100,
-   "new": 0,
-   "error": "",
-   "sample": [
-    "Request for Expression of Interest: Procurement of ESG Report Verification Services",
-    "Contract Award: Asphalting of internal roads of the 5th category in the MCA \"Dekhkonobod\" of the Kushtepa district of th",
-    "Contract Award: Asphalting of internal roads of the 5th category in the MCA \"Sarmozor\" of the Kushtepa district of the F"
-   ]
-  },
-  {
-   "site": "ADB Tenders",
-   "url": "https://www.adb.org/projects/tenders",
-   "ok": false,
-   "listings": 0,
-   "new": 0,
-   "error": "Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://www.adb.org/projects/tenders\", waiting until \"networkidle\"\n"
   },
   {
    "site": "Adaptation Fund",
