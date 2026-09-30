@@ -1,17 +1,17 @@
 {
- "updated": "2026-09-29T03:24+00:00",
+ "updated": "2026-09-30T03:25+00:00",
  "sites": [
   {
    "site": "fundsforNGOs",
    "url": "https://www2.fundsforngos.org/feed/",
    "ok": true,
    "listings": 25,
-   "new": 2,
+   "new": 3,
    "error": "",
    "sample": [
-    "Bringing Top Global Talent to Israeli Bio-Pharma Industry (Israel)",
-    "Request for Applications: Lifelong Learning Projects in Montenegro",
-    "SILab Incubation Program for Rehabilitation Centers (Ukraine)"
+    "Open Science Infrastructure Grant Programme (Netherlands)",
+    "Advanced Computing Projects Competition – Access Categories A0 and A1 (Portugal)",
+    "Apply for FCT Advanced Computing Projects in Portugal"
    ]
   },
   {
@@ -67,12 +67,12 @@
    "url": "https://opportunitydesk.org/feed/",
    "ok": true,
    "listings": 10,
-   "new": 0,
+   "new": 1,
    "error": "",
    "sample": [
-    "Ashoka Carnegie Challenge for Civic Leadership 2027",
-    "Melton Foundation Global Solvers Accelerator 2027",
-    "TWAS-SISSA-Lincei Research Cooperation Visits Programme 2026 (Funded)"
+    "Applications Open: Design & Digital Marketing School Cohort 3 for Lagos Residents",
+    "British Academy Innovation Fellowships Scheme 2026 (up to £120,000)",
+    "Max Weber Foundation Gerald D. Feldman Travel Grants 2026"
    ]
   },
   {
@@ -80,7 +80,7 @@
    "url": "https://www.terravivagrants.org/tag/eurasia/",
    "ok": true,
    "listings": 11,
-   "new": 3,
+   "new": 0,
    "error": "",
    "sample": [
     "MedWet — World Wetlands Day 2027 Awareness Grants",
@@ -93,7 +93,7 @@
    "url": "https://www.google.org/impact-challenges/",
    "ok": true,
    "listings": 2,
-   "new": 2,
+   "new": 0,
    "error": "",
    "sample": [
     "Google.org Impact Challenge: AI for Government Innovation Transform how public services function for social good. Learn ",
@@ -105,7 +105,7 @@
    "url": "https://www.citigroup.com/global/foundation/programs/global-innovation-challenge",
    "ok": true,
    "listings": 17,
-   "new": 6,
+   "new": 0,
    "error": "",
    "sample": [
     "Citi Foundation",
@@ -134,7 +134,7 @@
    "new": 0,
    "error": "",
    "sample": [
-    "Innovations in Low-Cost and Simplified Pathogen Sequencing Workflows"
+    "grants awarded"
    ]
   },
   {
@@ -168,8 +168,8 @@
    "error": "",
    "sample": [
     "Democracy Fund",
-    "UNDEF CSO Round Table during the 70th session of the CSW",
-    "Engaging Armenian Youth in Local Governance"
+    "UN Marks International Day of Democracy with Launch of Citizens' Assemblies Handbook",
+    "UNDEF CSO Round Table during the 70th session of the CSW"
    ]
   },
   {
@@ -214,15 +214,10 @@
   {
    "site": "EU Funding & Tenders",
    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/",
-   "ok": true,
-   "listings": 21,
+   "ok": false,
+   "listings": 0,
    "new": 0,
-   "error": "",
-   "sample": [
-    "New approaches for decentralized, federated and sustainable AI data processing (RIA) (HORIZON-CL4-2027-04-DATA-03)",
-    "Energy efficiency and sustainability of AI data processing in Data Centres (IA) (HORIZON-CL4-2027-04-DATA-09)",
-    "Demand-side 3C pilot demonstrators on converged Telco Edge Cloud Infrastructure (IA) (HORIZON-CL4-2027-04-DATA-08)"
-   ]
+   "error": "500 Server Error: Internal Server Error for url: https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA&text=Uzbekistan&pageSize=100&pageNumber=1"
   },
   {
    "site": "ICMPD Calls for Proposals",
@@ -241,12 +236,10 @@
    "site": "Grants.gov (incl. US Embassy calls)",
    "url": "https://www.grants.gov/",
    "ok": true,
-   "listings": 1,
+   "listings": 0,
    "new": 0,
-   "error": "",
-   "sample": [
-    "Coordinating Agricultural Development & Innovation (CADI) to enable America First Trade Wins in Europe, the South Caucas"
-   ]
+   "error": "no links found: page may need js: true, a link_pattern or item_selector",
+   "sample": []
   },
   {
    "site": "Norad Calls (Norway)",
