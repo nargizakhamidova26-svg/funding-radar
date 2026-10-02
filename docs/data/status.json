@@ -1,17 +1,17 @@
 {
- "updated": "2026-10-01T03:25+00:00",
+ "updated": "2026-10-02T03:23+00:00",
  "sites": [
   {
    "site": "fundsforNGOs",
    "url": "https://www2.fundsforngos.org/feed/",
    "ok": true,
    "listings": 25,
-   "new": 3,
+   "new": 1,
    "error": "",
    "sample": [
-    "Submit Applications for Direct Assistance Program (São Tomé)",
-    "Call for Applications: Language Vitality Program (Canada)",
-    "Call for Proposals: JAHF New Partners Program (United States)"
+    "Applications open for Fulbright Visiting Scholar Program (Israel)",
+    "Apply for Fulbright Inter-Country Travel Grant Program (Denmark)",
+    "Grant for Skilling Youth Groups in ICT and Multimedia (Uganda)"
    ]
   },
   {
@@ -70,9 +70,9 @@
    "new": 1,
    "error": "",
    "sample": [
-    "Sameer Ali Khan is OD Young Person of the Month -October 2026",
-    "African Development Bank (AfDB) Internship Program 2027",
-    "DesignMersive by Grohwie Program 2026"
+    "30 Hot Jobs Across Africa Currently Open – October 2, 2026",
+    "Oklahoma City Zoo & Botanical Garden Conservation Action Now Grants 2026 (up to $2,500)",
+    "AHRC Doctoral Landscape Award at the University of Sheffield 2027/2028"
    ]
   },
   {
@@ -250,12 +250,11 @@
    "site": "Norad Calls (Norway)",
    "url": "https://www.norad.no/en/for-partners/guides-and-tools/calls-for-proposals2/",
    "ok": true,
-   "listings": 2,
+   "listings": 1,
    "new": 0,
    "error": "",
    "sample": [
-    "Call for proposals for the Norwegian development programme to reduce plastic pollution and marine litter – Stage 2 (by i",
-    "Call for proposal to support research and evidence generation on comprehensive and safe abortion care Deadline: Today"
+    "Call for proposals for the Norwegian development programme to reduce plastic pollution and marine litter – Stage 2 (by i"
    ]
   },
   {
