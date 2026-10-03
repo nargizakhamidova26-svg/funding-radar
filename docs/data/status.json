@@ -1,18 +1,13 @@
 {
- "updated": "2026-10-02T03:23+00:00",
+ "updated": "2026-10-03T03:26+00:00",
  "sites": [
   {
    "site": "fundsforNGOs",
    "url": "https://www2.fundsforngos.org/feed/",
-   "ok": true,
-   "listings": 25,
-   "new": 1,
-   "error": "",
-   "sample": [
-    "Applications open for Fulbright Visiting Scholar Program (Israel)",
-    "Apply for Fulbright Inter-Country Travel Grant Program (Denmark)",
-    "Grant for Skilling Youth Groups in ICT and Multimedia (Uganda)"
-   ]
+   "ok": false,
+   "listings": 0,
+   "new": 0,
+   "error": "could not download (Exceeded 30 redirects.)"
   },
   {
    "site": "Proposals for NGOs",
@@ -67,12 +62,12 @@
    "url": "https://opportunitydesk.org/feed/",
    "ok": true,
    "listings": 10,
-   "new": 1,
+   "new": 2,
    "error": "",
    "sample": [
-    "30 Hot Jobs Across Africa Currently Open – October 2, 2026",
-    "Oklahoma City Zoo & Botanical Garden Conservation Action Now Grants 2026 (up to $2,500)",
-    "AHRC Doctoral Landscape Award at the University of Sheffield 2027/2028"
+    "ITU Gender Champions Programme 2027",
+    "UN Global Compact Business & Human Rights Accelerator 2026/2027",
+    "Unearthodox Exploration Co-Lab 2027 for Nature & Social Impact Innovators (CHF 10,000 Grant)"
    ]
   },
   {
@@ -215,13 +210,13 @@
    "site": "EU Funding & Tenders",
    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/",
    "ok": true,
-   "listings": 20,
+   "listings": 19,
    "new": 0,
    "error": "",
    "sample": [
     "New approaches for decentralized, federated and sustainable AI data processing (RIA) (HORIZON-CL4-2027-04-DATA-03)",
-    "Energy efficiency and sustainability of AI data processing in Data Centres (IA) (HORIZON-CL4-2027-04-DATA-09)",
-    "Demand-side 3C pilot demonstrators on converged Telco Edge Cloud Infrastructure (IA) (HORIZON-CL4-2027-04-DATA-08)"
+    "Demand-side 3C pilot demonstrators on converged Telco Edge Cloud Infrastructure (IA) (HORIZON-CL4-2027-04-DATA-08)",
+    "Energy efficiency and sustainability of AI data processing in Data Centres (IA) (HORIZON-CL4-2027-04-DATA-09)"
    ]
   },
   {
