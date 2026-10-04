@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-03T03:26+00:00",
+ "updated": "2026-10-04T05:13+00:00",
  "sites": [
   {
    "site": "fundsforNGOs",
@@ -62,12 +62,12 @@
    "url": "https://opportunitydesk.org/feed/",
    "ok": true,
    "listings": 10,
-   "new": 2,
+   "new": 0,
    "error": "",
    "sample": [
-    "ITU Gender Champions Programme 2027",
-    "UN Global Compact Business & Human Rights Accelerator 2026/2027",
-    "Unearthodox Exploration Co-Lab 2027 for Nature & Social Impact Innovators (CHF 10,000 Grant)"
+    "Loeb Fellowship 2027-2028 at the Harvard Graduate School of Design (Funded)",
+    "Google Engineering & Technical Internships 2027",
+    "Google Ireland Scholarship for Women in Computer Science 2027 (€5,000 award)"
    ]
   },
   {
@@ -215,8 +215,8 @@
    "error": "",
    "sample": [
     "New approaches for decentralized, federated and sustainable AI data processing (RIA) (HORIZON-CL4-2027-04-DATA-03)",
-    "Demand-side 3C pilot demonstrators on converged Telco Edge Cloud Infrastructure (IA) (HORIZON-CL4-2027-04-DATA-08)",
-    "Energy efficiency and sustainability of AI data processing in Data Centres (IA) (HORIZON-CL4-2027-04-DATA-09)"
+    "Energy efficiency and sustainability of AI data processing in Data Centres (IA) (HORIZON-CL4-2027-04-DATA-09)",
+    "Demand-side 3C pilot demonstrators on converged Telco Edge Cloud Infrastructure (IA) (HORIZON-CL4-2027-04-DATA-08)"
    ]
   },
   {
