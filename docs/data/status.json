@@ -1,13 +1,18 @@
 {
- "updated": "2026-10-04T05:13+00:00",
+ "updated": "2026-10-05T03:21+00:00",
  "sites": [
   {
    "site": "fundsforNGOs",
    "url": "https://www2.fundsforngos.org/feed/",
-   "ok": false,
-   "listings": 0,
+   "ok": true,
+   "listings": 25,
    "new": 0,
-   "error": "could not download (Exceeded 30 redirects.)"
+   "error": "",
+   "sample": [
+    "Applications open for Fulbright Visiting Scholar Program (Israel)",
+    "Apply for Fulbright Inter-Country Travel Grant Program (Denmark)",
+    "Grant for Skilling Youth Groups in ICT and Multimedia (Uganda)"
+   ]
   },
   {
    "site": "Proposals for NGOs",
@@ -35,12 +40,12 @@
    "site": "Terra Viva Grants",
    "url": "https://www.terravivagrants.org/funding-news/",
    "ok": true,
-   "listings": 40,
-   "new": 0,
+   "listings": 43,
+   "new": 4,
    "error": "",
    "sample": [
-    "International Fund for Agricultural Development — Rural Sector Performance Assessment for Policy and Investment",
-    "September 22, 2026",
+    "Farm Radio International — Farm Radio Awards",
+    "October 4, 2026",
     "Ilka Westermeyer"
    ]
   },
@@ -78,9 +83,9 @@
    "new": 0,
    "error": "",
    "sample": [
-    "MedWet — World Wetlands Day 2027 Awareness Grants",
+    "Misereor — Grassroots Development",
     "Ilka Westermeyer",
-    "Climate and Clean Air Coalition — Super Pollutant Country Action Accelerator"
+    "MedWet — World Wetlands Day 2027 Awareness Grants"
    ]
   },
   {
