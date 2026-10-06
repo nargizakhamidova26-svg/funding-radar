@@ -1,17 +1,17 @@
 {
- "updated": "2026-10-05T03:21+00:00",
+ "updated": "2026-10-06T03:24+00:00",
  "sites": [
   {
    "site": "fundsforNGOs",
    "url": "https://www2.fundsforngos.org/feed/",
    "ok": true,
    "listings": 25,
-   "new": 0,
+   "new": 4,
    "error": "",
    "sample": [
-    "Applications open for Fulbright Visiting Scholar Program (Israel)",
-    "Apply for Fulbright Inter-Country Travel Grant Program (Denmark)",
-    "Grant for Skilling Youth Groups in ICT and Multimedia (Uganda)"
+    "Open Call: 1st International Mute Photo Festival Award",
+    "Fulbright Visiting Research Scholar Award 2027-28 (Singapore)",
+    "CFAs: NGO for the implementation of Structuring and Capacity Building Program (Congo)"
    ]
   },
   {
@@ -41,7 +41,7 @@
    "url": "https://www.terravivagrants.org/funding-news/",
    "ok": true,
    "listings": 43,
-   "new": 4,
+   "new": 0,
    "error": "",
    "sample": [
     "Farm Radio International — Farm Radio Awards",
@@ -70,9 +70,9 @@
    "new": 0,
    "error": "",
    "sample": [
-    "Loeb Fellowship 2027-2028 at the Harvard Graduate School of Design (Funded)",
-    "Google Engineering & Technical Internships 2027",
-    "Google Ireland Scholarship for Women in Computer Science 2027 (€5,000 award)"
+    "AIxBio Fellowship 2027 at Cambridge (Fully-funded)",
+    "NetHope Humanitarian AI Research Fellowship 2026/2027",
+    "Switzer Fellowships 2027 for Graduate Students in the U.S."
    ]
   },
   {
@@ -202,7 +202,7 @@
    "site": "IKI (International Climate Initiative)",
    "url": "https://www.international-climate-initiative.com/en/find-funding/",
    "ok": true,
-   "listings": 10,
+   "listings": 11,
    "new": 0,
    "error": "",
    "sample": [
@@ -215,13 +215,13 @@
    "site": "EU Funding & Tenders",
    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/",
    "ok": true,
-   "listings": 19,
+   "listings": 17,
    "new": 0,
    "error": "",
    "sample": [
     "New approaches for decentralized, federated and sustainable AI data processing (RIA) (HORIZON-CL4-2027-04-DATA-03)",
-    "Energy efficiency and sustainability of AI data processing in Data Centres (IA) (HORIZON-CL4-2027-04-DATA-09)",
-    "Demand-side 3C pilot demonstrators on converged Telco Edge Cloud Infrastructure (IA) (HORIZON-CL4-2027-04-DATA-08)"
+    "European Partnership on Innovative SMEs (HORIZON-EIE-2021-INNOVSMES-01-01)",
+    "Climate-smart use of wood in the construction sector to support the New European Bauhaus (HORIZON-CL6-2024-CLIMATE-01-5)"
    ]
   },
   {
