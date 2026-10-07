@@ -1,17 +1,17 @@
 {
- "updated": "2026-10-06T03:24+00:00",
+ "updated": "2026-10-07T03:25+00:00",
  "sites": [
   {
    "site": "fundsforNGOs",
    "url": "https://www2.fundsforngos.org/feed/",
    "ok": true,
    "listings": 25,
-   "new": 4,
+   "new": 5,
    "error": "",
    "sample": [
-    "Open Call: 1st International Mute Photo Festival Award",
-    "Fulbright Visiting Research Scholar Award 2027-28 (Singapore)",
-    "CFAs: NGO for the implementation of Structuring and Capacity Building Program (Congo)"
+    "RFAs: District Disaster Management Plans for Jammu and Kashmir (India)",
+    "Request for Applications: Council Discretionary Grants (Canada)",
+    "Call for Proposals: NGANGU WALI ‘Stronger Women’ Project Implementation Partner (Central African Republic)"
    ]
   },
   {
@@ -70,9 +70,9 @@
    "new": 0,
    "error": "",
    "sample": [
-    "AIxBio Fellowship 2027 at Cambridge (Fully-funded)",
-    "NetHope Humanitarian AI Research Fellowship 2026/2027",
-    "Switzer Fellowships 2027 for Graduate Students in the U.S."
+    "Ernest May Fellowship in History and Policy 2027-2028 (stipend available)",
+    "Kuwait Program Research Fellowship 2027-2028 at HKS Belfer Center ($65,000 stipend)",
+    "ABCD Future Environmental Leaders Scholarships 2027"
    ]
   },
   {
