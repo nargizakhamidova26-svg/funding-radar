@@ -1,17 +1,17 @@
 {
- "updated": "2026-10-07T03:25+00:00",
+ "updated": "2026-10-08T03:25+00:00",
  "sites": [
   {
    "site": "fundsforNGOs",
    "url": "https://www2.fundsforngos.org/feed/",
    "ok": true,
    "listings": 25,
-   "new": 5,
+   "new": 7,
    "error": "",
    "sample": [
-    "RFAs: District Disaster Management Plans for Jammu and Kashmir (India)",
-    "Request for Applications: Council Discretionary Grants (Canada)",
-    "Call for Proposals: NGANGU WALI ‘Stronger Women’ Project Implementation Partner (Central African Republic)"
+    "Submissions open for Short Term Research Fellowship Program",
+    "Eni Award for Research and Innovation in Energy and Environment",
+    "Apply now for MDI Programme Innovation and Scale-up Hub (UK)"
    ]
   },
   {
@@ -70,9 +70,9 @@
    "new": 0,
    "error": "",
    "sample": [
-    "Ernest May Fellowship in History and Policy 2027-2028 (stipend available)",
-    "Kuwait Program Research Fellowship 2027-2028 at HKS Belfer Center ($65,000 stipend)",
-    "ABCD Future Environmental Leaders Scholarships 2027"
+    "27 Scholarship Opportunities Closing in October – October 7, 2026",
+    "Apple Hardware PhD Internships 2026",
+    "Bipartisan Policy Center Internship Program – Spring 2027"
    ]
   },
   {
@@ -105,7 +105,7 @@
    "url": "https://www.citigroup.com/global/foundation/programs/global-innovation-challenge",
    "ok": true,
    "listings": 17,
-   "new": 0,
+   "new": 1,
    "error": "",
    "sample": [
     "Citi Foundation",
@@ -215,13 +215,13 @@
    "site": "EU Funding & Tenders",
    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/",
    "ok": true,
-   "listings": 17,
+   "listings": 19,
    "new": 0,
    "error": "",
    "sample": [
+    "Energy efficiency and sustainability of AI data processing in Data Centres (IA) (HORIZON-CL4-2027-04-DATA-09)",
     "New approaches for decentralized, federated and sustainable AI data processing (RIA) (HORIZON-CL4-2027-04-DATA-03)",
-    "European Partnership on Innovative SMEs (HORIZON-EIE-2021-INNOVSMES-01-01)",
-    "Climate-smart use of wood in the construction sector to support the New European Bauhaus (HORIZON-CL6-2024-CLIMATE-01-5)"
+    "Demand-side 3C pilot demonstrators on converged Telco Edge Cloud Infrastructure (IA) (HORIZON-CL4-2027-04-DATA-08)"
    ]
   },
   {
