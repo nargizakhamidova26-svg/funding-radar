@@ -1,18 +1,13 @@
 {
- "updated": "2026-10-08T03:25+00:00",
+ "updated": "2026-10-09T03:20+00:00",
  "sites": [
   {
    "site": "fundsforNGOs",
    "url": "https://www2.fundsforngos.org/feed/",
-   "ok": true,
-   "listings": 25,
-   "new": 7,
-   "error": "",
-   "sample": [
-    "Submissions open for Short Term Research Fellowship Program",
-    "Eni Award for Research and Innovation in Energy and Environment",
-    "Apply now for MDI Programme Innovation and Scale-up Hub (UK)"
-   ]
+   "ok": false,
+   "listings": 0,
+   "new": 0,
+   "error": "could not download (Exceeded 30 redirects.)"
   },
   {
    "site": "Proposals for NGOs",
@@ -70,9 +65,9 @@
    "new": 0,
    "error": "",
    "sample": [
-    "27 Scholarship Opportunities Closing in October – October 7, 2026",
-    "Apple Hardware PhD Internships 2026",
-    "Bipartisan Policy Center Internship Program – Spring 2027"
+    "WISE EdTech Accelerator 2026-2027",
+    "Atlantic Fellows for Social and Economic Equity (AFSEE) Programme 2027-2028 (Fully-funded)",
+    "Gloria’s Foundation Fellowship 2027 ($5,000 stipend)"
    ]
   },
   {
@@ -105,7 +100,7 @@
    "url": "https://www.citigroup.com/global/foundation/programs/global-innovation-challenge",
    "ok": true,
    "listings": 17,
-   "new": 1,
+   "new": 0,
    "error": "",
    "sample": [
     "Citi Foundation",
@@ -215,7 +210,7 @@
    "site": "EU Funding & Tenders",
    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/",
    "ok": true,
-   "listings": 19,
+   "listings": 18,
    "new": 0,
    "error": "",
    "sample": [
