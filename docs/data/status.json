@@ -1,12 +1,12 @@
 {
- "updated": "2026-10-10T03:25+00:00",
+ "updated": "2026-10-11T03:20+00:00",
  "sites": [
   {
    "site": "fundsforNGOs",
    "url": "https://www2.fundsforngos.org/feed/",
    "ok": true,
    "listings": 25,
-   "new": 5,
+   "new": 0,
    "error": "",
    "sample": [
     "Call for Applications: Young Scientist Program 2027 (Panama)",
@@ -67,7 +67,7 @@
    "url": "https://opportunitydesk.org/feed/",
    "ok": true,
    "listings": 10,
-   "new": 2,
+   "new": 0,
    "error": "",
    "sample": [
     "WomanKind Creative Grant 2027",
@@ -219,9 +219,9 @@
    "new": 0,
    "error": "",
    "sample": [
-    "Demand-side 3C pilot demonstrators on converged Telco Edge Cloud Infrastructure (IA) (HORIZON-CL4-2027-04-DATA-08)",
     "Energy efficiency and sustainability of AI data processing in Data Centres (IA) (HORIZON-CL4-2027-04-DATA-09)",
-    "New approaches for decentralized, federated and sustainable AI data processing (RIA) (HORIZON-CL4-2027-04-DATA-03)"
+    "New approaches for decentralized, federated and sustainable AI data processing (RIA) (HORIZON-CL4-2027-04-DATA-03)",
+    "Demand-side 3C pilot demonstrators on converged Telco Edge Cloud Infrastructure (IA) (HORIZON-CL4-2027-04-DATA-08)"
    ]
   },
   {
