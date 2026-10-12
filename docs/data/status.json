@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-11T03:20+00:00",
+ "updated": "2026-10-12T03:21+00:00",
  "sites": [
   {
    "site": "fundsforNGOs",
@@ -40,12 +40,12 @@
    "site": "Terra Viva Grants",
    "url": "https://www.terravivagrants.org/funding-news/",
    "ok": true,
-   "listings": 43,
-   "new": 0,
+   "listings": 39,
+   "new": 1,
    "error": "",
    "sample": [
-    "Farm Radio International — Farm Radio Awards",
-    "October 4, 2026",
+    "GIZ MOVE-ComCashew — Cashew Business Idea Competition",
+    "October 11, 2026",
     "Ilka Westermeyer"
    ]
   },
@@ -79,13 +79,13 @@
    "site": "Terra Viva – Eurasia / Central Asia",
    "url": "https://www.terravivagrants.org/tag/eurasia/",
    "ok": true,
-   "listings": 11,
+   "listings": 12,
    "new": 0,
    "error": "",
    "sample": [
-    "Misereor — Grassroots Development",
-    "Ilka Westermeyer",
-    "MedWet — World Wetlands Day 2027 Awareness Grants"
+    "Heinrich Böll Foundation — University Studies in Germany 2027",
+    "View all posts by Jan Laarman",
+    "Misereor — Grassroots Development"
    ]
   },
   {
@@ -219,9 +219,9 @@
    "new": 0,
    "error": "",
    "sample": [
+    "Demand-side 3C pilot demonstrators on converged Telco Edge Cloud Infrastructure (IA) (HORIZON-CL4-2027-04-DATA-08)",
     "Energy efficiency and sustainability of AI data processing in Data Centres (IA) (HORIZON-CL4-2027-04-DATA-09)",
-    "New approaches for decentralized, federated and sustainable AI data processing (RIA) (HORIZON-CL4-2027-04-DATA-03)",
-    "Demand-side 3C pilot demonstrators on converged Telco Edge Cloud Infrastructure (IA) (HORIZON-CL4-2027-04-DATA-08)"
+    "New approaches for decentralized, federated and sustainable AI data processing (RIA) (HORIZON-CL4-2027-04-DATA-03)"
    ]
   },
   {
