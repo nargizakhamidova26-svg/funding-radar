@@ -1,13 +1,18 @@
 {
- "updated": "2026-10-14T03:30+00:00",
+ "updated": "2026-10-15T03:34+00:00",
  "sites": [
   {
    "site": "fundsforNGOs",
    "url": "https://www2.fundsforngos.org/feed/",
-   "ok": false,
-   "listings": 0,
-   "new": 0,
-   "error": "could not download (Exceeded 30 redirects.)"
+   "ok": true,
+   "listings": 25,
+   "new": 5,
+   "error": "",
+   "sample": [
+    "RFAs: Routes of Memory Trainings for Guides Organized in Partnership with DART (Ukraine)",
+    "Apply now for Atlas – France to Chinese-speaking Worlds Postdoctoral Fellowship",
+    "RFAs: Integrated Green Transition Models in Urban Public Institutions (Slovakia)"
+   ]
   },
   {
    "site": "Proposals for NGOs",
@@ -62,12 +67,12 @@
    "url": "https://opportunitydesk.org/feed/",
    "ok": true,
    "listings": 10,
-   "new": 0,
+   "new": 2,
    "error": "",
    "sample": [
-    "Ban Ki-moon Foundation Your Future in Green Jobs – Mentorship Program 2026",
-    "World Food Forum (WFF) Young Scientists Group 2027-2029",
-    "UNDP Africa Pan-African MineTech Exploration Technology Pre-Incubation Programme 2027"
+    "Changemakers for Youth Programme 2027 (Stipend available)",
+    "France Excellence Eiffel Scholarship Program 2026-2027",
+    "Tyler Prize Student Ambassador 2027"
    ]
   },
   {
@@ -214,9 +219,9 @@
    "new": 0,
    "error": "",
    "sample": [
-    "Demand-side 3C pilot demonstrators on converged Telco Edge Cloud Infrastructure (IA) (HORIZON-CL4-2027-04-DATA-08)",
     "Energy efficiency and sustainability of AI data processing in Data Centres (IA) (HORIZON-CL4-2027-04-DATA-09)",
-    "New approaches for decentralized, federated and sustainable AI data processing (RIA) (HORIZON-CL4-2027-04-DATA-03)"
+    "New approaches for decentralized, federated and sustainable AI data processing (RIA) (HORIZON-CL4-2027-04-DATA-03)",
+    "Demand-side 3C pilot demonstrators on converged Telco Edge Cloud Infrastructure (IA) (HORIZON-CL4-2027-04-DATA-08)"
    ]
   },
   {
