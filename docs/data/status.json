@@ -1,17 +1,17 @@
 {
- "updated": "2026-10-15T03:34+00:00",
+ "updated": "2026-10-16T03:36+00:00",
  "sites": [
   {
    "site": "fundsforNGOs",
    "url": "https://www2.fundsforngos.org/feed/",
    "ok": true,
    "listings": 25,
-   "new": 5,
+   "new": 9,
    "error": "",
    "sample": [
-    "RFAs: Routes of Memory Trainings for Guides Organized in Partnership with DART (Ukraine)",
-    "Apply now for Atlas – France to Chinese-speaking Worlds Postdoctoral Fellowship",
-    "RFAs: Integrated Green Transition Models in Urban Public Institutions (Slovakia)"
+    "Apply Now: Developing a Data Lab for Science with EOSC and RAISE",
+    "CFAs: Transformative Change towards a Nature-positive Economy and Society Program",
+    "CFAs: Innovative Solutions to Fight Wildlife Trafficking and Reduce Invasion of Invasive Alien Species"
    ]
   },
   {
@@ -67,12 +67,12 @@
    "url": "https://opportunitydesk.org/feed/",
    "ok": true,
    "listings": 10,
-   "new": 2,
+   "new": 1,
    "error": "",
    "sample": [
-    "Changemakers for Youth Programme 2027 (Stipend available)",
-    "France Excellence Eiffel Scholarship Program 2026-2027",
-    "Tyler Prize Student Ambassador 2027"
+    "Toronto Metropolitan University Global Migration Institute Scholarships 2027-2028",
+    "Deutsche Welle (DW) Traineeship 2028-2029",
+    "25 UN Administration and Facilities Management Jobs Currently Open – October 15, 2026"
    ]
   },
   {
@@ -219,9 +219,9 @@
    "new": 0,
    "error": "",
    "sample": [
-    "Energy efficiency and sustainability of AI data processing in Data Centres (IA) (HORIZON-CL4-2027-04-DATA-09)",
     "New approaches for decentralized, federated and sustainable AI data processing (RIA) (HORIZON-CL4-2027-04-DATA-03)",
-    "Demand-side 3C pilot demonstrators on converged Telco Edge Cloud Infrastructure (IA) (HORIZON-CL4-2027-04-DATA-08)"
+    "Demand-side 3C pilot demonstrators on converged Telco Edge Cloud Infrastructure (IA) (HORIZON-CL4-2027-04-DATA-08)",
+    "Energy efficiency and sustainability of AI data processing in Data Centres (IA) (HORIZON-CL4-2027-04-DATA-09)"
    ]
   },
   {
