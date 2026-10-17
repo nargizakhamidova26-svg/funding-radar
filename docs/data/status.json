@@ -1,17 +1,17 @@
 {
- "updated": "2026-10-16T03:36+00:00",
+ "updated": "2026-10-17T03:32+00:00",
  "sites": [
   {
    "site": "fundsforNGOs",
    "url": "https://www2.fundsforngos.org/feed/",
    "ok": true,
    "listings": 25,
-   "new": 9,
+   "new": 7,
    "error": "",
    "sample": [
-    "Apply Now: Developing a Data Lab for Science with EOSC and RAISE",
-    "CFAs: Transformative Change towards a Nature-positive Economy and Society Program",
-    "CFAs: Innovative Solutions to Fight Wildlife Trafficking and Reduce Invasion of Invasive Alien Species"
+    "CFAs: Silicon Carbide Cladding Lead Test Rod Development -Phase 1 (US)",
+    "RFAs: Mildred Blaxter Postdoctoral Fellowships Award (United Kingdom)",
+    "Academy Research Fellowship Program – Finland"
    ]
   },
   {
@@ -70,9 +70,9 @@
    "new": 1,
    "error": "",
    "sample": [
-    "Toronto Metropolitan University Global Migration Institute Scholarships 2027-2028",
-    "Deutsche Welle (DW) Traineeship 2028-2029",
-    "25 UN Administration and Facilities Management Jobs Currently Open – October 15, 2026"
+    "Apply Now: Allianz x Social Shifters MoveNow Social Innovation Challenge 2026 | $90,000 in Funding for Young Innovators",
+    "EJN Reporting Fellowships 2026 for Journalists to Cover BBNJ COP1 in New York City, USA",
+    "John S. Knight Journalism Fellowships 2027-2028 ($135,000 stipend)"
    ]
   },
   {
@@ -220,8 +220,8 @@
    "error": "",
    "sample": [
     "New approaches for decentralized, federated and sustainable AI data processing (RIA) (HORIZON-CL4-2027-04-DATA-03)",
-    "Demand-side 3C pilot demonstrators on converged Telco Edge Cloud Infrastructure (IA) (HORIZON-CL4-2027-04-DATA-08)",
-    "Energy efficiency and sustainability of AI data processing in Data Centres (IA) (HORIZON-CL4-2027-04-DATA-09)"
+    "Energy efficiency and sustainability of AI data processing in Data Centres (IA) (HORIZON-CL4-2027-04-DATA-09)",
+    "Demand-side 3C pilot demonstrators on converged Telco Edge Cloud Infrastructure (IA) (HORIZON-CL4-2027-04-DATA-08)"
    ]
   },
   {
