@@ -1,12 +1,12 @@
 {
- "updated": "2026-10-17T03:32+00:00",
+ "updated": "2026-10-18T03:27+00:00",
  "sites": [
   {
    "site": "fundsforNGOs",
    "url": "https://www2.fundsforngos.org/feed/",
    "ok": true,
    "listings": 25,
-   "new": 7,
+   "new": 0,
    "error": "",
    "sample": [
     "CFAs: Silicon Carbide Cladding Lead Test Rod Development -Phase 1 (US)",
@@ -67,7 +67,7 @@
    "url": "https://opportunitydesk.org/feed/",
    "ok": true,
    "listings": 10,
-   "new": 1,
+   "new": 0,
    "error": "",
    "sample": [
     "Apply Now: Allianz x Social Shifters MoveNow Social Innovation Challenge 2026 | $90,000 in Funding for Young Innovators",
