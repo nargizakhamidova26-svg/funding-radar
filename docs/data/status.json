@@ -1,17 +1,17 @@
 {
- "updated": "2026-10-19T03:31+00:00",
+ "updated": "2026-10-20T03:36+00:00",
  "sites": [
   {
    "site": "fundsforNGOs",
    "url": "https://www2.fundsforngos.org/feed/",
    "ok": true,
    "listings": 25,
-   "new": 0,
+   "new": 4,
    "error": "",
    "sample": [
-    "CFAs: Silicon Carbide Cladding Lead Test Rod Development -Phase 1 (US)",
-    "RFAs: Mildred Blaxter Postdoctoral Fellowships Award (United Kingdom)",
-    "Academy Research Fellowship Program – Finland"
+    "Business Start-up and Growth and Training Grant Programme (UK)",
+    "ESERO-UK Space Education and Engagement Grant (United Kingdom)",
+    "Low Value Grant for PPPs and PPCPs in Sorong (Indonesia)"
    ]
   },
   {
@@ -67,12 +67,12 @@
    "url": "https://opportunitydesk.org/feed/",
    "ok": true,
    "listings": 10,
-   "new": 0,
+   "new": 1,
    "error": "",
    "sample": [
-    "Apply Now: Allianz x Social Shifters MoveNow Social Innovation Challenge 2026 | $90,000 in Funding for Young Innovators",
-    "EJN Reporting Fellowships 2026 for Journalists to Cover BBNJ COP1 in New York City, USA",
-    "John S. Knight Journalism Fellowships 2027-2028 ($135,000 stipend)"
+    "TWAS Research Professors in LDCs 2026/2027",
+    "Foreign Affairs Information Technology (FAIT) Fellowship 2027 (Funded)",
+    "Abuja Job & Career Fair 2026 [Nigerians Only]"
    ]
   },
   {
@@ -219,8 +219,8 @@
    "new": 0,
    "error": "",
    "sample": [
-    "New approaches for decentralized, federated and sustainable AI data processing (RIA) (HORIZON-CL4-2027-04-DATA-03)",
     "Demand-side 3C pilot demonstrators on converged Telco Edge Cloud Infrastructure (IA) (HORIZON-CL4-2027-04-DATA-08)",
+    "New approaches for decentralized, federated and sustainable AI data processing (RIA) (HORIZON-CL4-2027-04-DATA-03)",
     "Energy efficiency and sustainability of AI data processing in Data Centres (IA) (HORIZON-CL4-2027-04-DATA-09)"
    ]
   },
