@@ -1,12 +1,12 @@
 {
- "updated": "2026-10-20T03:36+00:00",
+ "updated": "2026-10-21T03:31+00:00",
  "sites": [
   {
    "site": "fundsforNGOs",
    "url": "https://www2.fundsforngos.org/feed/",
    "ok": true,
    "listings": 25,
-   "new": 4,
+   "new": 0,
    "error": "",
    "sample": [
     "Business Start-up and Growth and Training Grant Programme (UK)",
@@ -67,12 +67,12 @@
    "url": "https://opportunitydesk.org/feed/",
    "ok": true,
    "listings": 10,
-   "new": 1,
+   "new": 0,
    "error": "",
    "sample": [
-    "TWAS Research Professors in LDCs 2026/2027",
-    "Foreign Affairs Information Technology (FAIT) Fellowship 2027 (Funded)",
-    "Abuja Job & Career Fair 2026 [Nigerians Only]"
+    "Jane Street Graduate Research Fellowship (GRF) 2027",
+    "U.S. Bank Discover Us: Finance & Banking Fellowship 2026",
+    "AI and National Security Convergence Fellowship 2026-2027"
    ]
   },
   {
@@ -215,13 +215,13 @@
    "site": "EU Funding & Tenders",
    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/",
    "ok": true,
-   "listings": 21,
+   "listings": 22,
    "new": 0,
    "error": "",
    "sample": [
-    "Demand-side 3C pilot demonstrators on converged Telco Edge Cloud Infrastructure (IA) (HORIZON-CL4-2027-04-DATA-08)",
     "New approaches for decentralized, federated and sustainable AI data processing (RIA) (HORIZON-CL4-2027-04-DATA-03)",
-    "Energy efficiency and sustainability of AI data processing in Data Centres (IA) (HORIZON-CL4-2027-04-DATA-09)"
+    "Energy efficiency and sustainability of AI data processing in Data Centres (IA) (HORIZON-CL4-2027-04-DATA-09)",
+    "Demand-side 3C pilot demonstrators on converged Telco Edge Cloud Infrastructure (IA) (HORIZON-CL4-2027-04-DATA-08)"
    ]
   },
   {
