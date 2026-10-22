@@ -1,17 +1,17 @@
 {
- "updated": "2026-10-21T03:31+00:00",
+ "updated": "2026-10-22T03:34+00:00",
  "sites": [
   {
    "site": "fundsforNGOs",
    "url": "https://www2.fundsforngos.org/feed/",
    "ok": true,
    "listings": 25,
-   "new": 0,
+   "new": 1,
    "error": "",
    "sample": [
-    "Business Start-up and Growth and Training Grant Programme (UK)",
-    "ESERO-UK Space Education and Engagement Grant (United Kingdom)",
-    "Low Value Grant for PPPs and PPCPs in Sorong (Indonesia)"
+    "Emirates Leadership Initiative Research Fellowship Program",
+    "Research Grant Program for Female Postgraduate Researchers",
+    "Open Call for SADC Media Awards Journalism"
    ]
   },
   {
@@ -40,12 +40,12 @@
    "site": "Terra Viva Grants",
    "url": "https://www.terravivagrants.org/funding-news/",
    "ok": true,
-   "listings": 39,
-   "new": 0,
+   "listings": 43,
+   "new": 3,
    "error": "",
    "sample": [
-    "GIZ MOVE-ComCashew — Cashew Business Idea Competition",
-    "October 11, 2026",
+    "International Development Research Center — Research in Community Forestry 2026",
+    "October 21, 2026",
     "Ilka Westermeyer"
    ]
   },
@@ -67,12 +67,12 @@
    "url": "https://opportunitydesk.org/feed/",
    "ok": true,
    "listings": 10,
-   "new": 0,
+   "new": 1,
    "error": "",
    "sample": [
-    "Jane Street Graduate Research Fellowship (GRF) 2027",
-    "U.S. Bank Discover Us: Finance & Banking Fellowship 2026",
-    "AI and National Security Convergence Fellowship 2026-2027"
+    "CDC Public Health Informatics Fellowship Program 2027",
+    "Simons Foundation Fellows-to-Faculty Program 2027",
+    "Novartis/University of Basel Next Generation Scientist Program 2027"
    ]
   },
   {
@@ -83,9 +83,9 @@
    "new": 0,
    "error": "",
    "sample": [
-    "Heinrich Böll Foundation — University Studies in Germany 2027",
-    "View all posts by Jan Laarman",
-    "Misereor — Grassroots Development"
+    "Institut für Auslandsbeziehungen — CrossCulture Program 2027",
+    "Ilka Westermeyer",
+    "Climate Technology Initiative — Funding for Climate or Clean Energy Projects"
    ]
   },
   {
@@ -201,15 +201,10 @@
   {
    "site": "IKI (International Climate Initiative)",
    "url": "https://www.international-climate-initiative.com/en/find-funding/",
-   "ok": true,
-   "listings": 11,
+   "ok": false,
+   "listings": 0,
    "new": 0,
-   "error": "",
-   "sample": [
-    "IKI Strategy 2030",
-    "Contact form",
-    "Click here for more information on the funding programme"
-   ]
+   "error": "could not download (HTTPSConnectionPool(host='www.international-climate-initiative.com', port=443): Max retries exceeded with url: /en/find-funding/ (Caused by ConnectTimeoutError(<HTTPSConnection(hos"
   },
   {
    "site": "EU Funding & Tenders",
