@@ -1,17 +1,17 @@
 {
- "updated": "2026-10-22T03:34+00:00",
+ "updated": "2026-10-23T03:37+00:00",
  "sites": [
   {
    "site": "fundsforNGOs",
    "url": "https://www2.fundsforngos.org/feed/",
    "ok": true,
    "listings": 25,
-   "new": 1,
+   "new": 3,
    "error": "",
    "sample": [
-    "Emirates Leadership Initiative Research Fellowship Program",
-    "Research Grant Program for Female Postgraduate Researchers",
-    "Open Call for SADC Media Awards Journalism"
+    "Call for Competition for Grants for NGO Veteran Services (Ukraine)",
+    "CFAs: BARMM Citizen Budget Briefs Development and Localization Program (Philippines)",
+    "Call for Applications: Summer Student Fellowship Program"
    ]
   },
   {
@@ -41,7 +41,7 @@
    "url": "https://www.terravivagrants.org/funding-news/",
    "ok": true,
    "listings": 43,
-   "new": 3,
+   "new": 0,
    "error": "",
    "sample": [
     "International Development Research Center — Research in Community Forestry 2026",
@@ -67,12 +67,12 @@
    "url": "https://opportunitydesk.org/feed/",
    "ok": true,
    "listings": 10,
-   "new": 1,
+   "new": 0,
    "error": "",
    "sample": [
-    "CDC Public Health Informatics Fellowship Program 2027",
-    "Simons Foundation Fellows-to-Faculty Program 2027",
-    "Novartis/University of Basel Next Generation Scientist Program 2027"
+    "25 Hot Job Opportunities at Google and Apple Currently Open – October 22, 2026",
+    "50 Scholarships, Grants, Fellowships and Other Opportunities Currently Open – October 22, 2026",
+    "What Is a Master’s by Research? Everything You Need to Know Before Applying"
    ]
   },
   {
@@ -201,10 +201,15 @@
   {
    "site": "IKI (International Climate Initiative)",
    "url": "https://www.international-climate-initiative.com/en/find-funding/",
-   "ok": false,
-   "listings": 0,
+   "ok": true,
+   "listings": 13,
    "new": 0,
-   "error": "could not download (HTTPSConnectionPool(host='www.international-climate-initiative.com', port=443): Max retries exceeded with url: /en/find-funding/ (Caused by ConnectTimeoutError(<HTTPSConnection(hos"
+   "error": "",
+   "sample": [
+    "IKI Strategy 2030",
+    "Contact form",
+    "Click here for more information on the funding programme"
+   ]
   },
   {
    "site": "EU Funding & Tenders",
