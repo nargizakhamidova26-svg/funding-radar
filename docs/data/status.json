@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23T03:37+00:00",
+ "updated": "2026-10-24T03:33+00:00",
  "sites": [
   {
    "site": "fundsforNGOs",
@@ -9,9 +9,9 @@
    "new": 3,
    "error": "",
    "sample": [
-    "Call for Competition for Grants for NGO Veteran Services (Ukraine)",
-    "CFAs: BARMM Citizen Budget Briefs Development and Localization Program (Philippines)",
-    "Call for Applications: Summer Student Fellowship Program"
+    "RIAS Berlin Commission Journalist Exchange Program (Germany)",
+    "Creative Innovation Lab Call Supports Cross-Sector Cultural Projects",
+    "Call for Media Freedom and Journalist Safety Projects"
    ]
   },
   {
@@ -70,9 +70,9 @@
    "new": 0,
    "error": "",
    "sample": [
-    "25 Hot Job Opportunities at Google and Apple Currently Open – October 22, 2026",
-    "50 Scholarships, Grants, Fellowships and Other Opportunities Currently Open – October 22, 2026",
-    "What Is a Master’s by Research? Everything You Need to Know Before Applying"
+    "Global Changemakers Media Impact Academy 2026/2027",
+    "MATTER Groundwork Innovator Accelerator 2027",
+    "World Food Forum Youth Policy Board 2027-2028"
    ]
   },
   {
@@ -228,7 +228,7 @@
    "site": "ICMPD Calls for Proposals",
    "url": "https://www.icmpd.org/work-with-us/grants/calls-for-proposals",
    "ok": true,
-   "listings": 13,
+   "listings": 15,
    "new": 0,
    "error": "",
    "sample": [
