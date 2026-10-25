@@ -1,12 +1,12 @@
 {
- "updated": "2026-10-24T03:33+00:00",
+ "updated": "2026-10-25T03:30+00:00",
  "sites": [
   {
    "site": "fundsforNGOs",
    "url": "https://www2.fundsforngos.org/feed/",
    "ok": true,
    "listings": 25,
-   "new": 3,
+   "new": 0,
    "error": "",
    "sample": [
     "RIAS Berlin Commission Journalist Exchange Program (Germany)",
@@ -70,9 +70,9 @@
    "new": 0,
    "error": "",
    "sample": [
-    "Global Changemakers Media Impact Academy 2026/2027",
-    "MATTER Groundwork Innovator Accelerator 2027",
-    "World Food Forum Youth Policy Board 2027-2028"
+    "IDM-Africa Fellowship Programme 2027",
+    "Anthropic STEM Fellowship 2027 (up to $167,000)",
+    "Atlantic Council GeoEconomics Center Young Global Professionals Program – Spring 2027"
    ]
   },
   {
