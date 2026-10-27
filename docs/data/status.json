@@ -1,17 +1,17 @@
 {
- "updated": "2026-10-26T03:33+00:00",
+ "updated": "2026-10-27T03:38+00:00",
  "sites": [
   {
    "site": "fundsforNGOs",
    "url": "https://www2.fundsforngos.org/feed/",
    "ok": true,
    "listings": 25,
-   "new": 0,
+   "new": 7,
    "error": "",
    "sample": [
-    "RIAS Berlin Commission Journalist Exchange Program (Germany)",
-    "Creative Innovation Lab Call Supports Cross-Sector Cultural Projects",
-    "Call for Media Freedom and Journalist Safety Projects"
+    "Call for Support to Civil Society Organisations and Human Rights and Democracy (Cambodia)",
+    "Request for Applications: Species Conservation Program (Canada)",
+    "Submit Applications for Project Award Grant Program"
    ]
   },
   {
@@ -67,12 +67,12 @@
    "url": "https://opportunitydesk.org/feed/",
    "ok": true,
    "listings": 10,
-   "new": 0,
+   "new": 1,
    "error": "",
    "sample": [
-    "33 Global Trainings, Awards and Travel Abroad Opportunities Currently Open – October 25, 2026",
-    "How to Leverage the End of the Year to Strengthen Your Finances and Make Smarter Investments",
-    "IDM-Africa Fellowship Programme 2027"
+    "Sir Cyril Taylor Young African Leaders Program 2027 (Fully-funded)",
+    "Nexa Lighthouse Funding Program 2027",
+    "Stanton Nuclear Security Fellows Program 2027/2028 (Stipend available)"
    ]
   },
   {
@@ -207,7 +207,7 @@
    "error": "",
    "sample": [
     "IKI Strategy 2030",
-    "Contact form",
+    "contact form",
     "Click here for more information on the funding programme"
    ]
   },
