@@ -1,17 +1,17 @@
 {
- "updated": "2026-10-27T03:38+00:00",
+ "updated": "2026-10-28T03:46+00:00",
  "sites": [
   {
    "site": "fundsforNGOs",
    "url": "https://www2.fundsforngos.org/feed/",
    "ok": true,
    "listings": 25,
-   "new": 7,
+   "new": 4,
    "error": "",
    "sample": [
-    "Call for Support to Civil Society Organisations and Human Rights and Democracy (Cambodia)",
-    "Request for Applications: Species Conservation Program (Canada)",
-    "Submit Applications for Project Award Grant Program"
+    "Submissions open for Australia Day Awards",
+    "RFPs: Labfront x Garmin Health Research Grant Program",
+    "RFAs: CDD Trust Grants for Charitable Work in New Zealand"
    ]
   },
   {
@@ -70,9 +70,9 @@
    "new": 1,
    "error": "",
    "sample": [
-    "Sir Cyril Taylor Young African Leaders Program 2027 (Fully-funded)",
-    "Nexa Lighthouse Funding Program 2027",
-    "Stanton Nuclear Security Fellows Program 2027/2028 (Stipend available)"
+    "IDRC John G. Bene Fellowship 2026 (up to $30,000 CAD)",
+    "100x Impact Accelerator 2027/2028 (£150,000 in catalytic funding)",
+    "IWA & Grundfos “Youth Action for SDG 6” Fellowship 2027-2028"
    ]
   },
   {
@@ -189,7 +189,7 @@
    "site": "CEPF Open Calls",
    "url": "https://www.cepf.net/grants/open-calls-for-proposals",
    "ok": true,
-   "listings": 14,
+   "listings": 15,
    "new": 0,
    "error": "",
    "sample": [
@@ -219,9 +219,9 @@
    "new": 0,
    "error": "",
    "sample": [
-    "New approaches for decentralized, federated and sustainable AI data processing (RIA) (HORIZON-CL4-2027-04-DATA-03)",
     "Energy efficiency and sustainability of AI data processing in Data Centres (IA) (HORIZON-CL4-2027-04-DATA-09)",
-    "Demand-side 3C pilot demonstrators on converged Telco Edge Cloud Infrastructure (IA) (HORIZON-CL4-2027-04-DATA-08)"
+    "Demand-side 3C pilot demonstrators on converged Telco Edge Cloud Infrastructure (IA) (HORIZON-CL4-2027-04-DATA-08)",
+    "New approaches for decentralized, federated and sustainable AI data processing (RIA) (HORIZON-CL4-2027-04-DATA-03)"
    ]
   },
   {
