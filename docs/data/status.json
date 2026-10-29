@@ -1,17 +1,17 @@
 {
- "updated": "2026-10-28T03:46+00:00",
+ "updated": "2026-10-29T03:51+00:00",
  "sites": [
   {
    "site": "fundsforNGOs",
    "url": "https://www2.fundsforngos.org/feed/",
    "ok": true,
    "listings": 25,
-   "new": 4,
+   "new": 3,
    "error": "",
    "sample": [
-    "Submissions open for Australia Day Awards",
-    "RFPs: Labfront x Garmin Health Research Grant Program",
-    "RFAs: CDD Trust Grants for Charitable Work in New Zealand"
+    "Apply now for Build Communities Strong Fund – Local Impact Stream (Canada)",
+    "Grant for Translators of Swedish Literature (Sweden)",
+    "Open Doors: Russian Scholarship Project"
    ]
   },
   {
@@ -67,12 +67,12 @@
    "url": "https://opportunitydesk.org/feed/",
    "ok": true,
    "listings": 10,
-   "new": 1,
+   "new": 0,
    "error": "",
    "sample": [
-    "IDRC John G. Bene Fellowship 2026 (up to $30,000 CAD)",
-    "100x Impact Accelerator 2027/2028 (£150,000 in catalytic funding)",
-    "IWA & Grundfos “Youth Action for SDG 6” Fellowship 2027-2028"
+    "23 Hot Job Opportunities Currently Open – October 28, 2026",
+    "How to Navigate Legal Requirements for Starting and Running a Business Anywhere in the World",
+    "British Council Green & Digital Employability and Enterprise Programme 2027 (£150,000 grant)"
    ]
   },
   {
@@ -215,7 +215,7 @@
    "site": "EU Funding & Tenders",
    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/",
    "ok": true,
-   "listings": 22,
+   "listings": 23,
    "new": 0,
    "error": "",
    "sample": [
