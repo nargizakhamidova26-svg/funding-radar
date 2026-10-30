@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-29T03:51+00:00",
+ "updated": "2026-10-30T09:56+00:00",
  "sites": [
   {
    "site": "fundsforNGOs",
@@ -9,9 +9,9 @@
    "new": 3,
    "error": "",
    "sample": [
-    "Apply now for Build Communities Strong Fund – Local Impact Stream (Canada)",
-    "Grant for Translators of Swedish Literature (Sweden)",
-    "Open Doors: Russian Scholarship Project"
+    "People and Capability Program – Workforce – R2 (Australia)",
+    "Call for Nominations: Health-related Play Award (United Kingdom)",
+    "Fulbright U.S.-ASEAN Visiting Scholar Awards for ASEAN Research"
    ]
   },
   {
@@ -70,9 +70,9 @@
    "new": 0,
    "error": "",
    "sample": [
-    "23 Hot Job Opportunities Currently Open – October 28, 2026",
-    "How to Navigate Legal Requirements for Starting and Running a Business Anywhere in the World",
-    "British Council Green & Digital Employability and Enterprise Programme 2027 (£150,000 grant)"
+    "Mozilla Foundation Fellowships 2027-2028 (up to $125,000)",
+    "Green Global Fellowship 2027 for Emerging Leaders",
+    "Youth4Climate Services Innovation Hackathon 2026"
    ]
   },
   {
@@ -176,7 +176,7 @@
    "site": "Adaptation Fund",
    "url": "https://www.adaptation-fund.org/apply-funding/",
    "ok": true,
-   "listings": 34,
+   "listings": 35,
    "new": 0,
    "error": "",
    "sample": [
@@ -219,9 +219,9 @@
    "new": 0,
    "error": "",
    "sample": [
+    "New approaches for decentralized, federated and sustainable AI data processing (RIA) (HORIZON-CL4-2027-04-DATA-03)",
     "Energy efficiency and sustainability of AI data processing in Data Centres (IA) (HORIZON-CL4-2027-04-DATA-09)",
-    "Demand-side 3C pilot demonstrators on converged Telco Edge Cloud Infrastructure (IA) (HORIZON-CL4-2027-04-DATA-08)",
-    "New approaches for decentralized, federated and sustainable AI data processing (RIA) (HORIZON-CL4-2027-04-DATA-03)"
+    "Demand-side 3C pilot demonstrators on converged Telco Edge Cloud Infrastructure (IA) (HORIZON-CL4-2027-04-DATA-08)"
    ]
   },
   {
