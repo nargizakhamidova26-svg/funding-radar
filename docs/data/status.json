@@ -1,17 +1,17 @@
 {
- "updated": "2026-10-30T09:56+00:00",
+ "updated": "2026-10-31T09:32+00:00",
  "sites": [
   {
    "site": "fundsforNGOs",
    "url": "https://www2.fundsforngos.org/feed/",
    "ok": true,
    "listings": 25,
-   "new": 3,
+   "new": 1,
    "error": "",
    "sample": [
-    "People and Capability Program – Workforce – R2 (Australia)",
-    "Call for Nominations: Health-related Play Award (United Kingdom)",
-    "Fulbright U.S.-ASEAN Visiting Scholar Awards for ASEAN Research"
+    "CFAs: People and Capability Program – Capacity R2 (Australia)",
+    "Stream 1: Health and Development Participation Grant in Australia",
+    "Applications open for TFL Audience Design Fund 2027"
    ]
   },
   {
@@ -70,9 +70,9 @@
    "new": 0,
    "error": "",
    "sample": [
-    "Mozilla Foundation Fellowships 2027-2028 (up to $125,000)",
-    "Green Global Fellowship 2027 for Emerging Leaders",
-    "Youth4Climate Services Innovation Hackathon 2026"
+    "Call for Mentees: Telemachus & Athena Mentoring Programme 2027",
+    "Black Wealth Club 2026-2027 for Emerging Leaders",
+    "Global Burden of Disease (GBD) Fellowship 2027"
    ]
   },
   {
@@ -219,9 +219,9 @@
    "new": 0,
    "error": "",
    "sample": [
-    "New approaches for decentralized, federated and sustainable AI data processing (RIA) (HORIZON-CL4-2027-04-DATA-03)",
     "Energy efficiency and sustainability of AI data processing in Data Centres (IA) (HORIZON-CL4-2027-04-DATA-09)",
-    "Demand-side 3C pilot demonstrators on converged Telco Edge Cloud Infrastructure (IA) (HORIZON-CL4-2027-04-DATA-08)"
+    "Demand-side 3C pilot demonstrators on converged Telco Edge Cloud Infrastructure (IA) (HORIZON-CL4-2027-04-DATA-08)",
+    "New approaches for decentralized, federated and sustainable AI data processing (RIA) (HORIZON-CL4-2027-04-DATA-03)"
    ]
   },
   {
