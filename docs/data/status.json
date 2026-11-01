@@ -1,12 +1,12 @@
 {
- "updated": "2026-10-31T09:32+00:00",
+ "updated": "2026-11-01T10:19+00:00",
  "sites": [
   {
    "site": "fundsforNGOs",
    "url": "https://www2.fundsforngos.org/feed/",
    "ok": true,
    "listings": 25,
-   "new": 1,
+   "new": 0,
    "error": "",
    "sample": [
     "CFAs: People and Capability Program – Capacity R2 (Australia)",
@@ -70,9 +70,9 @@
    "new": 0,
    "error": "",
    "sample": [
-    "Call for Mentees: Telemachus & Athena Mentoring Programme 2027",
-    "Black Wealth Club 2026-2027 for Emerging Leaders",
-    "Global Burden of Disease (GBD) Fellowship 2027"
+    "Women in Ocean Food Innovation Studio 2027",
+    "Mastercard Foundation Scholars Program at Sciences Po 2027 (Fully-funded)",
+    "IREX Community Solutions Program (CSP) 2026-2027 (Fully-funded)"
    ]
   },
   {
