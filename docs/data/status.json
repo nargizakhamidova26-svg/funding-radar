@@ -1,17 +1,17 @@
 {
- "updated": "2026-11-01T10:19+00:00",
+ "updated": "2026-11-02T10:56+00:00",
  "sites": [
   {
    "site": "fundsforNGOs",
    "url": "https://www2.fundsforngos.org/feed/",
    "ok": true,
    "listings": 25,
-   "new": 0,
+   "new": 2,
    "error": "",
    "sample": [
-    "CFAs: People and Capability Program – Capacity R2 (Australia)",
-    "Stream 1: Health and Development Participation Grant in Australia",
-    "Applications open for TFL Audience Design Fund 2027"
+    "Apply Now: Agricultural and Pastoral Society Grants (Australia)",
+    "Grants Available for Improving Education and Healthcare Services (Tunisia)",
+    "Grant for Education, Healthcare and Good Governance Projects (Georgia)"
    ]
   },
   {
@@ -40,12 +40,12 @@
    "site": "Terra Viva Grants",
    "url": "https://www.terravivagrants.org/funding-news/",
    "ok": true,
-   "listings": 43,
-   "new": 0,
+   "listings": 39,
+   "new": 2,
    "error": "",
    "sample": [
-    "International Development Research Center — Research in Community Forestry 2026",
-    "October 21, 2026",
+    "European Landowners’ Organization — Land and Soil Management Award",
+    "November 1, 2026",
     "Ilka Westermeyer"
    ]
   },
@@ -70,9 +70,9 @@
    "new": 0,
    "error": "",
    "sample": [
+    "Beyond the Classroom: My Journey Doing a Placement-Based Master’s Dissertation in Sierra Leone",
     "Women in Ocean Food Innovation Studio 2027",
-    "Mastercard Foundation Scholars Program at Sciences Po 2027 (Fully-funded)",
-    "IREX Community Solutions Program (CSP) 2026-2027 (Fully-funded)"
+    "Mastercard Foundation Scholars Program at Sciences Po 2027 (Fully-funded)"
    ]
   },
   {
@@ -83,9 +83,9 @@
    "new": 0,
    "error": "",
    "sample": [
-    "Institut für Auslandsbeziehungen — CrossCulture Program 2027",
+    "Critical Ecosystem Partnership Fund — Biodiversity Projects by Turkmen Civil Society",
     "Ilka Westermeyer",
-    "Climate Technology Initiative — Funding for Climate or Clean Energy Projects"
+    "Institut für Auslandsbeziehungen — CrossCulture Program 2027"
    ]
   },
   {
@@ -141,14 +141,10 @@
    "site": "Fondation Botnar",
    "url": "https://www.fondationbotnar.org/funding-opportunities/",
    "ok": true,
-   "listings": 3,
+   "listings": 0,
    "new": 0,
-   "error": "",
-   "sample": [
-    "market-based approach to philanthropy",
-    "values and principles",
-    "Global Access Approach here"
-   ]
+   "error": "no links found: page may need js: true, a link_pattern or item_selector",
+   "sample": []
   },
   {
    "site": "Bezos Earth Fund – AI for Climate and Nature",
