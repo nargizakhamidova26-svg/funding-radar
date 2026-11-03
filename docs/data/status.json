@@ -1,17 +1,17 @@
 {
- "updated": "2026-11-02T10:56+00:00",
+ "updated": "2026-11-03T10:48+00:00",
  "sites": [
   {
    "site": "fundsforNGOs",
    "url": "https://www2.fundsforngos.org/feed/",
    "ok": true,
    "listings": 25,
-   "new": 2,
+   "new": 6,
    "error": "",
    "sample": [
-    "Apply Now: Agricultural and Pastoral Society Grants (Australia)",
-    "Grants Available for Improving Education and Healthcare Services (Tunisia)",
-    "Grant for Education, Healthcare and Good Governance Projects (Georgia)"
+    "Call for Proposals: NSW Carers Investment Grant Program 2026 (Australia)",
+    "Grant Funding Round for Paediatric Cancer Care in Australia",
+    "Slovakia–Taiwan 2026: Funding for Joint International Research and Development Projects"
    ]
   },
   {
@@ -41,7 +41,7 @@
    "url": "https://www.terravivagrants.org/funding-news/",
    "ok": true,
    "listings": 39,
-   "new": 2,
+   "new": 0,
    "error": "",
    "sample": [
     "European Landowners’ Organization — Land and Soil Management Award",
@@ -70,9 +70,9 @@
    "new": 0,
    "error": "",
    "sample": [
-    "Beyond the Classroom: My Journey Doing a Placement-Based Master’s Dissertation in Sierra Leone",
-    "Women in Ocean Food Innovation Studio 2027",
-    "Mastercard Foundation Scholars Program at Sciences Po 2027 (Fully-funded)"
+    "IJP Southern African-German Journalists’ Programme 2027",
+    "EEP Africa Rising Energy Leader 2026",
+    "WAAW Foundation Scholarship 2027 for Female College Students in Africa"
    ]
   },
   {
@@ -186,7 +186,7 @@
    "url": "https://www.cepf.net/grants/open-calls-for-proposals",
    "ok": true,
    "listings": 15,
-   "new": 0,
+   "new": 1,
    "error": "",
    "sample": [
     "Before You Apply",
@@ -215,9 +215,9 @@
    "new": 0,
    "error": "",
    "sample": [
+    "New approaches for decentralized, federated and sustainable AI data processing (RIA) (HORIZON-CL4-2027-04-DATA-03)",
     "Energy efficiency and sustainability of AI data processing in Data Centres (IA) (HORIZON-CL4-2027-04-DATA-09)",
-    "Demand-side 3C pilot demonstrators on converged Telco Edge Cloud Infrastructure (IA) (HORIZON-CL4-2027-04-DATA-08)",
-    "New approaches for decentralized, federated and sustainable AI data processing (RIA) (HORIZON-CL4-2027-04-DATA-03)"
+    "Demand-side 3C pilot demonstrators on converged Telco Edge Cloud Infrastructure (IA) (HORIZON-CL4-2027-04-DATA-08)"
    ]
   },
   {
