@@ -1,17 +1,17 @@
 {
- "updated": "2026-11-03T10:48+00:00",
+ "updated": "2026-11-05T10:46+00:00",
  "sites": [
   {
    "site": "fundsforNGOs",
    "url": "https://www2.fundsforngos.org/feed/",
    "ok": true,
    "listings": 25,
-   "new": 6,
+   "new": 5,
    "error": "",
    "sample": [
-    "Call for Proposals: NSW Carers Investment Grant Program 2026 (Australia)",
-    "Grant Funding Round for Paediatric Cancer Care in Australia",
-    "Slovakia–Taiwan 2026: Funding for Joint International Research and Development Projects"
+    "CFAs: Impulsregeling Artist Development Grant (Netherlands)",
+    "Community Sport and Recreation Infrastructure Fund (Stream 1) Repair and Rehabilitation – Canada",
+    "Apply for Youth AI4SDGs Impact Challenge Grant in Asia-Pacific"
    ]
   },
   {
@@ -70,9 +70,9 @@
    "new": 0,
    "error": "",
    "sample": [
-    "IJP Southern African-German Journalists’ Programme 2027",
-    "EEP Africa Rising Energy Leader 2026",
-    "WAAW Foundation Scholarship 2027 for Female College Students in Africa"
+    "ILO Writing Competitions on Safe Labour Migration in East and Horn of Africa 2027",
+    "Cannes Lions Scholarship 2027 (Fully-funded)",
+    "Friedrich Ebert Foundation (FES) Young Leaders Program 2027"
    ]
   },
   {
@@ -186,7 +186,7 @@
    "url": "https://www.cepf.net/grants/open-calls-for-proposals",
    "ok": true,
    "listings": 15,
-   "new": 1,
+   "new": 0,
    "error": "",
    "sample": [
     "Before You Apply",
@@ -215,9 +215,9 @@
    "new": 0,
    "error": "",
    "sample": [
-    "New approaches for decentralized, federated and sustainable AI data processing (RIA) (HORIZON-CL4-2027-04-DATA-03)",
     "Energy efficiency and sustainability of AI data processing in Data Centres (IA) (HORIZON-CL4-2027-04-DATA-09)",
-    "Demand-side 3C pilot demonstrators on converged Telco Edge Cloud Infrastructure (IA) (HORIZON-CL4-2027-04-DATA-08)"
+    "Demand-side 3C pilot demonstrators on converged Telco Edge Cloud Infrastructure (IA) (HORIZON-CL4-2027-04-DATA-08)",
+    "New approaches for decentralized, federated and sustainable AI data processing (RIA) (HORIZON-CL4-2027-04-DATA-03)"
    ]
   },
   {
