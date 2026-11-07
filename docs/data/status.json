@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-06T10:46+00:00",
+ "updated": "2026-11-07T09:53+00:00",
  "sites": [
   {
    "site": "fundsforNGOs",
    "url": "https://www2.fundsforngos.org/feed/",
    "ok": true,
    "listings": 25,
-   "new": 5,
+   "new": 0,
    "error": "",
    "sample": [
     "Open Call: Canada Fund for Local Initiatives – Papua New Guinea",
@@ -67,12 +67,12 @@
    "url": "https://opportunitydesk.org/feed/",
    "ok": true,
    "listings": 10,
-   "new": 2,
+   "new": 1,
    "error": "",
    "sample": [
-    "Growing Your Business with Venture Funding: 5 Practical Steps for Entrepreneurs",
-    "How to Ace Your Scholarship Interview: 12 Tips to Help You Stand Out",
-    "University of Vienna Faculty of Law Fellowship Programme – Summer 2027"
+    "Call for judges : Join the OD Impact Challenge 2026 global judging panel",
+    "Global Changemakers’ Media Impact Academy 2027 for Youth in the USA (A chance to win a $1,000 grant)",
+    "Spencer Fellowship for Education Reporting 2027 (Funded)"
    ]
   },
   {
@@ -185,7 +185,7 @@
    "site": "CEPF Open Calls",
    "url": "https://www.cepf.net/grants/open-calls-for-proposals",
    "ok": true,
-   "listings": 15,
+   "listings": 14,
    "new": 0,
    "error": "",
    "sample": [
@@ -215,9 +215,9 @@
    "new": 0,
    "error": "",
    "sample": [
+    "New approaches for decentralized, federated and sustainable AI data processing (RIA) (HORIZON-CL4-2027-04-DATA-03)",
     "Energy efficiency and sustainability of AI data processing in Data Centres (IA) (HORIZON-CL4-2027-04-DATA-09)",
-    "Demand-side 3C pilot demonstrators on converged Telco Edge Cloud Infrastructure (IA) (HORIZON-CL4-2027-04-DATA-08)",
-    "New approaches for decentralized, federated and sustainable AI data processing (RIA) (HORIZON-CL4-2027-04-DATA-03)"
+    "Demand-side 3C pilot demonstrators on converged Telco Edge Cloud Infrastructure (IA) (HORIZON-CL4-2027-04-DATA-08)"
    ]
   },
   {
