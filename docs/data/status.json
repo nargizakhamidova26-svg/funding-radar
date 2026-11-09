@@ -1,18 +1,13 @@
 {
- "updated": "2026-11-08T10:06+00:00",
+ "updated": "2026-11-09T11:16+00:00",
  "sites": [
   {
    "site": "fundsforNGOs",
    "url": "https://www2.fundsforngos.org/feed/",
-   "ok": true,
-   "listings": 25,
+   "ok": false,
+   "listings": 0,
    "new": 0,
-   "error": "",
-   "sample": [
-    "Open Call: Canada Fund for Local Initiatives – Papua New Guinea",
-    "Apply Now: Canada Fund for Local Initiatives – Solomon Islands",
-    "Canada Fund for Local Initiatives – Vanuatu 2026"
-   ]
+   "error": "could not download (Exceeded 30 redirects.)"
   },
   {
    "site": "Proposals for NGOs",
@@ -67,7 +62,7 @@
    "url": "https://opportunitydesk.org/feed/",
    "ok": true,
    "listings": 10,
-   "new": 1,
+   "new": 0,
    "error": "",
    "sample": [
     "MCW Global Young Leaders Fellowship 2027 (Funded)",
@@ -215,9 +210,9 @@
    "new": 0,
    "error": "",
    "sample": [
+    "New approaches for decentralized, federated and sustainable AI data processing (RIA) (HORIZON-CL4-2027-04-DATA-03)",
     "Energy efficiency and sustainability of AI data processing in Data Centres (IA) (HORIZON-CL4-2027-04-DATA-09)",
-    "Demand-side 3C pilot demonstrators on converged Telco Edge Cloud Infrastructure (IA) (HORIZON-CL4-2027-04-DATA-08)",
-    "New approaches for decentralized, federated and sustainable AI data processing (RIA) (HORIZON-CL4-2027-04-DATA-03)"
+    "Demand-side 3C pilot demonstrators on converged Telco Edge Cloud Infrastructure (IA) (HORIZON-CL4-2027-04-DATA-08)"
    ]
   },
   {
