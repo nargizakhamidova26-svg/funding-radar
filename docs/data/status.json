@@ -1,13 +1,18 @@
 {
- "updated": "2026-11-09T11:16+00:00",
+ "updated": "2026-11-10T11:03+00:00",
  "sites": [
   {
    "site": "fundsforNGOs",
    "url": "https://www2.fundsforngos.org/feed/",
-   "ok": false,
-   "listings": 0,
-   "new": 0,
-   "error": "could not download (Exceeded 30 redirects.)"
+   "ok": true,
+   "listings": 25,
+   "new": 6,
+   "error": "",
+   "sample": [
+    "Funding to Boost Plantation Establishment in Australia’s Forestry Industry",
+    "UK-Hong Kong Arts and Technology Partnership Development Fund",
+    "Applications open for Age-Friendly Communities Grant (Canada)"
+   ]
   },
   {
    "site": "Proposals for NGOs",
@@ -65,9 +70,9 @@
    "new": 0,
    "error": "",
    "sample": [
-    "MCW Global Young Leaders Fellowship 2027 (Funded)",
-    "Center for Effective Global Action (CEGA) Visiting Fellowship 2027-2028",
-    "21 Hot Job Opportunities Currently Open – November 7, 2026"
+    "Chatham House Research Fellow Africa Programme 2026-2027",
+    "QNX Global Hackathon 2026 ($50,000 in prizes)",
+    "ICANN Fellowship Program 2027 to Attend ICANN89 Policy Forum in Vancouver, Canada (Funded)"
    ]
   },
   {
@@ -206,11 +211,11 @@
    "site": "EU Funding & Tenders",
    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/",
    "ok": true,
-   "listings": 23,
-   "new": 0,
+   "listings": 24,
+   "new": 1,
    "error": "",
    "sample": [
-    "New approaches for decentralized, federated and sustainable AI data processing (RIA) (HORIZON-CL4-2027-04-DATA-03)",
+    "Support to Civil Society, Human Rights and Democracy in Uzbekistan 2026-2027 (EuropeAid/187607/DD/ACT/UZ)",
     "Energy efficiency and sustainability of AI data processing in Data Centres (IA) (HORIZON-CL4-2027-04-DATA-09)",
     "Demand-side 3C pilot demonstrators on converged Telco Edge Cloud Infrastructure (IA) (HORIZON-CL4-2027-04-DATA-08)"
    ]
