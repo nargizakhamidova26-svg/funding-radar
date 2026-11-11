@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-10T11:03+00:00",
+ "updated": "2026-11-11T10:39+00:00",
  "sites": [
   {
    "site": "fundsforNGOs",
    "url": "https://www2.fundsforngos.org/feed/",
    "ok": true,
    "listings": 25,
-   "new": 6,
+   "new": 0,
    "error": "",
    "sample": [
     "Funding to Boost Plantation Establishment in Australia’s Forestry Industry",
@@ -70,9 +70,9 @@
    "new": 0,
    "error": "",
    "sample": [
-    "Chatham House Research Fellow Africa Programme 2026-2027",
-    "QNX Global Hackathon 2026 ($50,000 in prizes)",
-    "ICANN Fellowship Program 2027 to Attend ICANN89 Policy Forum in Vancouver, Canada (Funded)"
+    "Pladis Accelerator Programme 2026",
+    "African Development Bank Group Shanghai Ocean University Scholarship Masters Degree Program 2027",
+    "Global Youth Mental Health Research Fellowship 2027"
    ]
   },
   {
@@ -212,12 +212,12 @@
    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/",
    "ok": true,
    "listings": 24,
-   "new": 1,
+   "new": 0,
    "error": "",
    "sample": [
     "Support to Civil Society, Human Rights and Democracy in Uzbekistan 2026-2027 (EuropeAid/187607/DD/ACT/UZ)",
-    "Energy efficiency and sustainability of AI data processing in Data Centres (IA) (HORIZON-CL4-2027-04-DATA-09)",
-    "Demand-side 3C pilot demonstrators on converged Telco Edge Cloud Infrastructure (IA) (HORIZON-CL4-2027-04-DATA-08)"
+    "New approaches for decentralized, federated and sustainable AI data processing (RIA) (HORIZON-CL4-2027-04-DATA-03)",
+    "Energy efficiency and sustainability of AI data processing in Data Centres (IA) (HORIZON-CL4-2027-04-DATA-09)"
    ]
   },
   {
