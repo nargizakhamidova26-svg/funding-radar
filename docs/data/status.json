@@ -1,18 +1,13 @@
 {
- "updated": "2026-11-13T10:53+00:00",
+ "updated": "2026-11-14T10:04+00:00",
  "sites": [
   {
    "site": "fundsforNGOs",
    "url": "https://www2.fundsforngos.org/feed/",
-   "ok": true,
-   "listings": 25,
-   "new": 8,
-   "error": "",
-   "sample": [
-    "Apply for National Animal Disease Preparedness and Response State Preparedness Funding Program (United States)",
-    "RFAs: National Animal Disease Preparedness and Response Program Industry Preparedness Funding (US)",
-    "Margaret Awards for Human by Design AI Innovation"
-   ]
+   "ok": false,
+   "listings": 0,
+   "new": 0,
+   "error": "could not download (Exceeded 30 redirects.)"
   },
   {
    "site": "Proposals for NGOs",
@@ -41,7 +36,7 @@
    "url": "https://www.terravivagrants.org/funding-news/",
    "ok": true,
    "listings": 40,
-   "new": 1,
+   "new": 0,
    "error": "",
    "sample": [
     "GIZ SAIS Accelerator — Livestock Investment Readiness Program",
@@ -67,12 +62,12 @@
    "url": "https://opportunitydesk.org/feed/",
    "ok": true,
    "listings": 10,
-   "new": 0,
+   "new": 1,
    "error": "",
    "sample": [
-    "UCLA Library Special Collections (LSC) Research Fellowships 2027 (Funded)",
-    "Ashoka Young Changemakers Program – Nigeria 2027",
-    "E-JUST TICAD9 African Scholarship for STI – Fall 2027"
+    "UCD Iseult Honohan Doctoral Scholarship 2027 (Fully-funded)",
+    "Bayer Foundation Scientific Fellowships 2027 (up to €10,000)",
+    "US-UK Fulbright Commission UK Summer Institutes 2027 (Funded)"
    ]
   },
   {
@@ -164,8 +159,8 @@
    "error": "",
    "sample": [
     "Democracy Fund",
-    "UN Marks International Day of Democracy with Launch of Citizens' Assemblies Handbook",
-    "UNDEF CSO Round Table during the 70th session of the CSW"
+    "Engaging Male Leaders for Gender-Inclusive Governance in Sierra Leone",
+    "Nigerian Youth-Led ARTvocacy Wins 2026 Intercultural Achievement Award"
    ]
   },
   {
