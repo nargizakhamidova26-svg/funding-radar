@@ -1,17 +1,17 @@
 {
- "updated": "2026-11-15T10:40+00:00",
+ "updated": "2026-11-16T11:00+00:00",
  "sites": [
   {
    "site": "fundsforNGOs",
    "url": "https://www2.fundsforngos.org/feed/",
    "ok": true,
    "listings": 25,
-   "new": 0,
+   "new": 3,
    "error": "",
    "sample": [
-    "Call for Applications: Darin Schaefer Warrior Fund (Canada)",
-    "Call for Applications: Crown Estate Coastal Communities Fund (United Kingdom)",
-    "Apply for National Animal Disease Preparedness and Response State Preparedness Funding Program (United States)"
+    "Apply Now: Community Growing Fund for Mid Suffolk Communities (United Kingdom)",
+    "Open Call for ESA Φ-LAB Grand Marathon",
+    "Call for Applications: ADG Community Grants Program (Australia)"
    ]
   },
   {
@@ -67,7 +67,7 @@
    "url": "https://opportunitydesk.org/feed/",
    "ok": true,
    "listings": 10,
-   "new": 1,
+   "new": 0,
    "error": "",
    "sample": [
     "BusinessDay Young Economists Writing Challenge 2026 (N450,000 in prizes)",
