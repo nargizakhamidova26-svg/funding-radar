@@ -1,17 +1,17 @@
 {
- "updated": "2026-11-17T11:45+00:00",
+ "updated": "2026-11-18T11:31+00:00",
  "sites": [
   {
    "site": "fundsforNGOs",
    "url": "https://www2.fundsforngos.org/feed/",
    "ok": true,
    "listings": 25,
-   "new": 7,
+   "new": 2,
    "error": "",
    "sample": [
-    "Nominations Open for Land and Soil Management Award",
-    "Submit Applications for Ukraine Agricultural Support Program",
-    "Broad Agency Announcement for Oceanic and Atmospheric Research (US)"
+    "Russian State Scholarship Programme for Tanzanian Students",
+    "RTÉ This is Art! Competition for Young People in Ireland",
+    "Global Youth Mental Health Research Fellowship Program (Pakistan)"
    ]
   },
   {
@@ -67,12 +67,12 @@
    "url": "https://opportunitydesk.org/feed/",
    "ok": true,
    "listings": 10,
-   "new": 1,
+   "new": 2,
    "error": "",
    "sample": [
-    "Refugee-Led Research Hub (RLRH) East Africa Operations Manager",
-    "International Court of Justice Judicial Fellowship Programme 2027-2028",
-    "Zoom AI Launchpad Startup Grants 2027"
+    "Journalism & Women Symposium (JAWS) Health Journalism Fellowship 2027 ($4,000 stipend)",
+    "Healthy Futures Mastercard Scholarship 2027",
+    "French-African Foundation Young Leaders Program 2027"
    ]
   },
   {
