@@ -1,17 +1,17 @@
 {
- "updated": "2026-11-18T11:31+00:00",
+ "updated": "2026-11-19T11:30+00:00",
  "sites": [
   {
    "site": "fundsforNGOs",
    "url": "https://www2.fundsforngos.org/feed/",
    "ok": true,
    "listings": 25,
-   "new": 2,
+   "new": 5,
    "error": "",
    "sample": [
-    "Russian State Scholarship Programme for Tanzanian Students",
-    "RTÉ This is Art! Competition for Young People in Ireland",
-    "Global Youth Mental Health Research Fellowship Program (Pakistan)"
+    "Apply for Celebrate Urban Birds Mini-Grants for Environmental Education",
+    "RFAs: International Community Access to Child Health Grant",
+    "Open Call: Contemporary Use of Crafts (Netherlands)"
    ]
   },
   {
@@ -67,12 +67,12 @@
    "url": "https://opportunitydesk.org/feed/",
    "ok": true,
    "listings": 10,
-   "new": 2,
+   "new": 1,
    "error": "",
    "sample": [
-    "Journalism & Women Symposium (JAWS) Health Journalism Fellowship 2027 ($4,000 stipend)",
-    "Healthy Futures Mastercard Scholarship 2027",
-    "French-African Foundation Young Leaders Program 2027"
+    "John M. Belk Impact Fellowship 2027-2028 (Paid)",
+    "NextGen Service Summer Policy Academy (SPA) 2027 (Fully-funded)",
+    "New America Fellows Program Class of 2028 (up to $30,000)"
    ]
   },
   {
