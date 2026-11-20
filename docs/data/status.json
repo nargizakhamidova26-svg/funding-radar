@@ -1,17 +1,17 @@
 {
- "updated": "2026-11-19T11:30+00:00",
+ "updated": "2026-11-20T11:20+00:00",
  "sites": [
   {
    "site": "fundsforNGOs",
    "url": "https://www2.fundsforngos.org/feed/",
    "ok": true,
    "listings": 25,
-   "new": 5,
+   "new": 3,
    "error": "",
    "sample": [
-    "Apply for Celebrate Urban Birds Mini-Grants for Environmental Education",
-    "RFAs: International Community Access to Child Health Grant",
-    "Open Call: Contemporary Use of Crafts (Netherlands)"
+    "Call for Proposals: Foreign Qualification Recognition Funding (Canada)",
+    "Applications Open for Eat Right India Photography Contest (India)",
+    "Call for Proposals: Women’s Economic Empowerment through Small Business Development (Albania)"
    ]
   },
   {
@@ -40,12 +40,12 @@
    "site": "Terra Viva Grants",
    "url": "https://www.terravivagrants.org/funding-news/",
    "ok": true,
-   "listings": 40,
-   "new": 0,
+   "listings": 43,
+   "new": 2,
    "error": "",
    "sample": [
-    "GIZ SAIS Accelerator — Livestock Investment Readiness Program",
-    "November 12, 2026",
+    "Food and Agriculture Organization — Soil Collage Global Student Contest",
+    "November 19, 2026",
     "Ilka Westermeyer"
    ]
   },
@@ -67,12 +67,12 @@
    "url": "https://opportunitydesk.org/feed/",
    "ok": true,
    "listings": 10,
-   "new": 1,
+   "new": 0,
    "error": "",
    "sample": [
-    "John M. Belk Impact Fellowship 2027-2028 (Paid)",
-    "NextGen Service Summer Policy Academy (SPA) 2027 (Fully-funded)",
-    "New America Fellows Program Class of 2028 (up to $30,000)"
+    "IAS Person-Centred Care Global Advocacy Academy 2027 (Funded)",
+    "Oxford Saïd Future Leaders Scholarships 2027",
+    "Rest & Resilience Fellowship 2027 (Fully-funded)"
    ]
   },
   {
@@ -83,9 +83,9 @@
    "new": 0,
    "error": "",
    "sample": [
-    "International Fund for Agricultural Development — Rapid Crisis Response and Strengthen Rural Resilience",
+    "SparkUp Initiative — Fundraising Workshop",
     "Ilka Westermeyer",
-    "Asia Foundation — Development Fellows 2027"
+    "International Fund for Agricultural Development — Rapid Crisis Response and Strengthen Rural Resilience"
    ]
   },
   {
@@ -211,7 +211,7 @@
    "site": "EU Funding & Tenders",
    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/",
    "ok": true,
-   "listings": 25,
+   "listings": 24,
    "new": 0,
    "error": "",
    "sample": [
