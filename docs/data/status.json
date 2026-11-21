@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-20T11:20+00:00",
+ "updated": "2026-11-21T10:52+00:00",
  "sites": [
   {
    "site": "fundsforNGOs",
    "url": "https://www2.fundsforngos.org/feed/",
    "ok": true,
    "listings": 25,
-   "new": 3,
+   "new": 0,
    "error": "",
    "sample": [
     "Call for Proposals: Foreign Qualification Recognition Funding (Canada)",
@@ -41,7 +41,7 @@
    "url": "https://www.terravivagrants.org/funding-news/",
    "ok": true,
    "listings": 43,
-   "new": 2,
+   "new": 0,
    "error": "",
    "sample": [
     "Food and Agriculture Organization — Soil Collage Global Student Contest",
@@ -67,12 +67,12 @@
    "url": "https://opportunitydesk.org/feed/",
    "ok": true,
    "listings": 10,
-   "new": 0,
+   "new": 1,
    "error": "",
    "sample": [
-    "IAS Person-Centred Care Global Advocacy Academy 2027 (Funded)",
-    "Oxford Saïd Future Leaders Scholarships 2027",
-    "Rest & Resilience Fellowship 2027 (Fully-funded)"
+    "Klaus J. Jacobs Research Prize 2027 (up to 1 million Swiss Francs)",
+    "Cambridge Africa Climate Collaborative Research Fund 2026/2027",
+    "NIVEA CONNECT Gen Z Research Grant Program 2026 (up to €30,000)"
    ]
   },
   {
@@ -186,7 +186,7 @@
    "url": "https://www.cepf.net/grants/open-calls-for-proposals",
    "ok": true,
    "listings": 14,
-   "new": 0,
+   "new": 1,
    "error": "",
    "sample": [
     "Before You Apply",
