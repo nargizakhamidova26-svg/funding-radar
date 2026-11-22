@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T10:52+00:00",
+ "updated": "2026-11-22T11:00+00:00",
  "sites": [
   {
    "site": "fundsforNGOs",
@@ -67,12 +67,12 @@
    "url": "https://opportunitydesk.org/feed/",
    "ok": true,
    "listings": 10,
-   "new": 1,
+   "new": 0,
    "error": "",
    "sample": [
-    "Klaus J. Jacobs Research Prize 2027 (up to 1 million Swiss Francs)",
-    "Cambridge Africa Climate Collaborative Research Fund 2026/2027",
-    "NIVEA CONNECT Gen Z Research Grant Program 2026 (up to €30,000)"
+    "Clements-Archer National Security Policy Postdoctoral Fellowship 2027-2028 ($80,000 stipend)",
+    "Asia House Fellowship 2027/2028 (£24,000 stipend)",
+    "SADC Secondary School Essay Competition 2027"
    ]
   },
   {
@@ -186,7 +186,7 @@
    "url": "https://www.cepf.net/grants/open-calls-for-proposals",
    "ok": true,
    "listings": 14,
-   "new": 1,
+   "new": 0,
    "error": "",
    "sample": [
     "Before You Apply",
