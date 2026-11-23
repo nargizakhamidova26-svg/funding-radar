@@ -1,17 +1,17 @@
 {
- "updated": "2026-11-22T11:00+00:00",
+ "updated": "2026-11-23T12:13+00:00",
  "sites": [
   {
    "site": "fundsforNGOs",
    "url": "https://www2.fundsforngos.org/feed/",
    "ok": true,
    "listings": 25,
-   "new": 0,
+   "new": 11,
    "error": "",
    "sample": [
-    "Call for Proposals: Foreign Qualification Recognition Funding (Canada)",
-    "Applications Open for Eat Right India Photography Contest (India)",
-    "Call for Proposals: Women’s Economic Empowerment through Small Business Development (Albania)"
+    "4004 Nature Education and Science Schools Support Program (Turkey)",
+    "Wearables and Observables: Understanding Home Learning Environment (UK)",
+    "India-EU Co-Funding Initiative on Climate Change and Polar Research"
    ]
   },
   {
