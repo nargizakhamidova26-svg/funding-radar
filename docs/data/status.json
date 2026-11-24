@@ -1,17 +1,17 @@
 {
- "updated": "2026-11-23T12:13+00:00",
+ "updated": "2026-11-24T13:35+00:00",
  "sites": [
   {
    "site": "fundsforNGOs",
    "url": "https://www2.fundsforngos.org/feed/",
    "ok": true,
    "listings": 25,
-   "new": 11,
+   "new": 8,
    "error": "",
    "sample": [
-    "4004 Nature Education and Science Schools Support Program (Turkey)",
-    "Wearables and Observables: Understanding Home Learning Environment (UK)",
-    "India-EU Co-Funding Initiative on Climate Change and Polar Research"
+    "An International Donor Funds Work in Your District. Who Can You Actually Apply To?",
+    "How to Use Community Rainfall Records as Evidence in a Drought Adaptation Proposal",
+    "Which Donors Will Pay for the Staff in a Community Health Programme?"
    ]
   },
   {
@@ -70,9 +70,9 @@
    "new": 0,
    "error": "",
    "sample": [
-    "Clements-Archer National Security Policy Postdoctoral Fellowship 2027-2028 ($80,000 stipend)",
-    "Asia House Fellowship 2027/2028 (£24,000 stipend)",
-    "SADC Secondary School Essay Competition 2027"
+    "Fulbright Teaching Excellence and Achievement Program 2027 (Funded)",
+    "Yale Council on African Studies Visiting African Scholars Fellowship 2027-2028",
+    "Tor Community Fellowship 2027 (stipend available)"
    ]
   },
   {
