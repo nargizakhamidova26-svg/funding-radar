@@ -1,18 +1,13 @@
 {
- "updated": "2026-11-24T13:35+00:00",
+ "updated": "2026-11-25T12:30+00:00",
  "sites": [
   {
    "site": "fundsforNGOs",
    "url": "https://www2.fundsforngos.org/feed/",
-   "ok": true,
-   "listings": 25,
-   "new": 8,
-   "error": "",
-   "sample": [
-    "An International Donor Funds Work in Your District. Who Can You Actually Apply To?",
-    "How to Use Community Rainfall Records as Evidence in a Drought Adaptation Proposal",
-    "Which Donors Will Pay for the Staff in a Community Health Programme?"
-   ]
+   "ok": false,
+   "listings": 0,
+   "new": 0,
+   "error": "could not download (403 Client Error: Forbidden for url: https://www2.fundsforngos.org/feed/)"
   },
   {
    "site": "Proposals for NGOs",
@@ -70,9 +65,9 @@
    "new": 0,
    "error": "",
    "sample": [
-    "Fulbright Teaching Excellence and Achievement Program 2027 (Funded)",
-    "Yale Council on African Studies Visiting African Scholars Fellowship 2027-2028",
-    "Tor Community Fellowship 2027 (stipend available)"
+    "African Union Development Agency Energize Africa Health Fellows Program 2027",
+    "Call for Applications: Better Futures Fellowship 2027",
+    "Earth Observation (EO) Excellence Award 2027 (up to €15,000)"
    ]
   },
   {
@@ -217,7 +212,7 @@
    "sample": [
     "Support to Civil Society, Human Rights and Democracy in Uzbekistan 2026-2027 (EuropeAid/187607/DD/ACT/UZ)",
     "Open procedure for the conclusion of a single framework contract on the supply of IT hardware equipment to the benefit o",
-    "Energy efficiency and sustainability of AI data processing in Data Centres (IA) (HORIZON-CL4-2027-04-DATA-09)"
+    "Demand-side 3C pilot demonstrators on converged Telco Edge Cloud Infrastructure (IA) (HORIZON-CL4-2027-04-DATA-08)"
    ]
   },
   {
