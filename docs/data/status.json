@@ -1,13 +1,18 @@
 {
- "updated": "2026-11-25T12:30+00:00",
+ "updated": "2026-11-26T12:15+00:00",
  "sites": [
   {
    "site": "fundsforNGOs",
    "url": "https://www2.fundsforngos.org/feed/",
-   "ok": false,
-   "listings": 0,
-   "new": 0,
-   "error": "could not download (403 Client Error: Forbidden for url: https://www2.fundsforngos.org/feed/)"
+   "ok": true,
+   "listings": 25,
+   "new": 6,
+   "error": "",
+   "sample": [
+    "5 Rapid-Response Funds African Civil Society Groups Can Approach in a Crisis",
+    "5 Funders to Research for Girls’ Secondary Education in Malawi",
+    "COP-PILOT 2nd Open Call for Technology Development and Validation"
+   ]
   },
   {
    "site": "Proposals for NGOs",
@@ -65,9 +70,9 @@
    "new": 0,
    "error": "",
    "sample": [
-    "African Union Development Agency Energize Africa Health Fellows Program 2027",
-    "Call for Applications: Better Futures Fellowship 2027",
-    "Earth Observation (EO) Excellence Award 2027 (up to €15,000)"
+    "Friends of Pakistan Fellowship 2027 (Funded)",
+    "10 Global Scholarship Opportunities Currently Open – November 25, 2026",
+    "1776 Reimagined: A Revolution Without the Declaration Essay Competition 2026"
    ]
   },
   {
@@ -219,7 +224,7 @@
    "site": "ICMPD Calls for Proposals",
    "url": "https://www.icmpd.org/work-with-us/grants/calls-for-proposals",
    "ok": true,
-   "listings": 15,
+   "listings": 17,
    "new": 0,
    "error": "",
    "sample": [
