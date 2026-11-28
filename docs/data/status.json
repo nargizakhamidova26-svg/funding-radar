@@ -1,17 +1,17 @@
 {
- "updated": "2026-11-27T12:04+00:00",
+ "updated": "2026-11-28T11:40+00:00",
  "sites": [
   {
    "site": "fundsforNGOs",
    "url": "https://www2.fundsforngos.org/feed/",
    "ok": true,
    "listings": 25,
-   "new": 7,
+   "new": 13,
    "error": "",
    "sample": [
-    "Where to Find Rolling Innovation Grants When Your Fieldwork Can’t Wait for the Next Funding Round",
-    "Who Pays for the Night Shift? 5 Funding Sources for African Women’s Shelters",
-    "What Should You Do When Two Donors Offer to Fund the Same Pilot?"
+    "5 Ways to Show a Donor That Community Members Chose the Project",
+    "10 Foundations That Fund Nigerian NGOs and What Each Looks for in a Partner",
+    "7 Clauses African NGOs Should Review Before Signing a Subgrant Agreement"
    ]
   },
   {
@@ -24,7 +24,7 @@
    "sample": [
     "Top 5 Tips for Proposal on Refugee Issue",
     "Urika Basnet",
-    "International Day of Charity- 5 Quick Fundraising Tips"
+    "5 Tips for Applying for Grants to Combat AIDS and HIV"
    ]
   },
   {
@@ -70,9 +70,9 @@
    "new": 0,
    "error": "",
    "sample": [
-    "Beyond the Credential: How an Online DBA Can Reshape the Way You Lead",
-    "Google for Startups Accelerator: Sovereign AI 2027",
-    "Friends of Pakistan Fellowship 2027 (Funded)"
+    "DOT Climate Innovation Bootcamp 2026",
+    "EU–India Young Leaders Exchange Programme 2026–2027 (Funded)",
+    "Queen Elizabeth Commonwealth Scholarships 2027 (Fully-funded)"
    ]
   },
   {
@@ -212,7 +212,7 @@
    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/",
    "ok": true,
    "listings": 26,
-   "new": 1,
+   "new": 0,
    "error": "",
    "sample": [
     "Support to Civil Society, Human Rights and Democracy in Uzbekistan 2026-2027 (EuropeAid/187607/DD/ACT/UZ)",
@@ -224,7 +224,7 @@
    "site": "ICMPD Calls for Proposals",
    "url": "https://www.icmpd.org/work-with-us/grants/calls-for-proposals",
    "ok": true,
-   "listings": 17,
+   "listings": 18,
    "new": 0,
    "error": "",
    "sample": [
